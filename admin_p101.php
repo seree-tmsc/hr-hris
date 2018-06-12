@@ -1,5 +1,5 @@
 <?php
-    include_once('chk_Session.php');
+    include_once('include/chk_Session.php');
     if($user_email == "")
     {
         echo "<script> 
@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once("library.php"); ?>
+    <?php require_once("include/library.php"); ?>
     <?php //require_once("library_modal_emp_master.php"); ?>
     <style>    
         /*-------------------------------- */
@@ -34,7 +34,7 @@
     <div class="container">
 
         <!-- Begin Static navbar -->
-        <?php require_once("menu_navbar.php"); ?>
+        <?php require_once("include/menu_navbar.php"); ?>
         <!-- End Static navbar -->
 
         <!-- Begin content page-->
@@ -56,17 +56,17 @@
         if(strtoupper($_SESSION["ses_user_type"]) == 'A')
         {
             echo "<div id='left_slide'>";
-            require_once("menu_admin.php");
+            require_once("include/menu_admin.php");
             echo "</div>";            
         }
     ?>
     <!--/Test End left slide menu -->
 
     <!-- Logout Modal-->
-    <?php require_once("modal_logout.php"); ?>
+    <?php require_once("include/modal_logout.php"); ?>
 
     <!-- Change Password Modal-->
-    <?php require_once("modal_chgpassword.php"); ?>
+    <?php require_once("include/modal_chgpassword.php"); ?>
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 <?php
-    include_once('chk_Session.php');
+    include_once('include/chk_Session.php');
     if($user_email == "")
     {
         echo "<script> 
@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once("library.php"); ?>
+    <?php require_once("include/library.php"); ?>
 </head>
 
 <body class="bg-dark">

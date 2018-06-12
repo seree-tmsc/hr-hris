@@ -1,5 +1,5 @@
 <?php
-    include_once('chk_Session.php');
+    include_once('include/chk_Session.php');
     if($user_email == "")
     {
         echo "<script> 
@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once("library.php"); ?>    
+    <?php require_once("include/library.php"); ?>    
 </head>
 
 <body class="bg-dark">
@@ -23,7 +23,7 @@
     <div class="container">
 
         <!-- Begin Static navbar -->
-        <?php require_once("menu_navbar.php"); ?>
+        <?php require_once("include/menu_navbar.php"); ?>
         <!-- End Static navbar -->
 
         <!-- Begin content page-->
@@ -32,7 +32,7 @@
             <!-- coluimn #1 3 unit -->
             <!-------------------- -->
             <div class="col-lg-3 col-md-6">                        
-                <?php require_once("menu_user.php"); ?>
+                <?php require_once("include/menu_user.php"); ?>
             </div>
 
             <!-------------------- -->
@@ -40,7 +40,7 @@
             <!-------------------- -->
             <div class="col-lg-9 col-md-6">            
                 <div class="user" align="center">
-                    <?php require_once("label_header.php"); ?>
+                    <?php require_once("include/label_header.php"); ?>
                 </div>                
                 <?php                     
                     $param_emp_code=$_SESSION["ses_emp_code"];
@@ -57,17 +57,17 @@
         if(strtoupper($_SESSION["ses_user_type"]) == 'A')
         {
             echo "<div id='left_slide'>";
-            require_once("menu_admin.php");
+            require_once("include/menu_admin.php");
             echo "</div>";            
         }
     ?>
     <!--/Test End left slide menu -->
 
     <!-- Logout Modal-->
-    <?php require_once("modal_logout.php"); ?>
+    <?php require_once("include/modal_logout.php"); ?>
 
     <!-- Change Password Modal-->
-    <?php require_once("modal_chgpassword.php"); ?>
+    <?php require_once("include/modal_chgpassword.php"); ?>
 
 </body>
 </html>
