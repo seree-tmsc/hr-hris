@@ -1,6 +1,6 @@
 <?php
 
-function send_line_notify($message, $token)
+function send_notification($message, $token)
     {
         $ch = curl_init();
         curl_setopt( $ch, CURLOPT_URL, "https://notify-api.line.me/api/notify");

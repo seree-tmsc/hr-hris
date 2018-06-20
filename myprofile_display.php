@@ -143,7 +143,7 @@
             </div>
             <div class="col-md-2" align="left">
                 <label>วันเกิด</label>
-                <input type="text" readonly class="form-control" value="<?php echo $emp_birth_date->format('d/m/Y'); ?>">
+                <input type="text" readonly class="form-control" value="<?php echo $emp_birth_date->format('d/M/Y'); ?>">
             </div>
             <div class="col-md-3" align="left">
                 <label>โทรศัพท์</label>
@@ -183,7 +183,7 @@
             </div>
             <div class="col-lg-2" align="left">
                 <label>วันที่เริ่มงาน</label>
-                <input type="text" readonly class="form-control" value="<?php echo $job_working_date->format('d/m/Y'); ?>" >
+                <input type="text" readonly class="form-control" value="<?php echo $job_working_date->format('d/M/Y'); ?>" >
             </div>            
         </div>
         
@@ -238,21 +238,21 @@
                 <label>ระดับการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_level1;?>">
             </div>
-            <div class="col-lg-2" align="left">
+            <div class="col-lg-4" align="left">
                 <label>วุฒิการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_detail1;?>">
             </div>
-            <div class="col-lg-4" align="left">
+            <div class="col-lg-6" align="left">
                 <label>สถาบัน</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_institute1;?>">
-            </div>
+            </div>            
+        </div>
+
+        <div class="form-group">
             <div class="col-lg-4" align="left">
                 <label>คณะ</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_faculty1;?>">
             </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-lg-4" align="left">
                 <label>วิชาเอก</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_major1;?>">
@@ -278,21 +278,21 @@
                 <label>ระดับการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_level2;?>">
             </div>
-            <div class="col-lg-2" align="left">
+            <div class="col-lg-4" align="left">
                 <label>วุฒิการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_detail2;?>">
             </div>
-            <div class="col-lg-4" align="left">
+            <div class="col-lg-6" align="left">
                 <label>สถาบัน</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_institute2;?>">
-            </div>
+            </div>            
+        </div>
+
+        <div class="form-group">
             <div class="col-lg-4" align="left">
                 <label>คณะ</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_faculty2;?>">
             </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-lg-4" align="left">
                 <label>วิชาเอก</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_major2;?>">

@@ -39,8 +39,8 @@
             <tr>                
                 <td class='text-center'><?php echo $ds['job_department']; ?></td>
                 <td class='text-center'><?php echo $ds['emp_code']; ?></td>
-                <td><?php echo $ds['emp_efname']; ?></td>
-                <td><?php echo $ds['emp_elname']; ?></td>
+                <td><?php echo $ds['emp_tfname']; ?></td>
+                <td><?php echo $ds['emp_tlname']; ?></td>
                 <td class='text-center'><?php echo $ds['job_grade']; ?></td>
                 <td><?php echo $ds['job_position']; ?></td>                
                 <td class='text-center'>
@@ -48,9 +48,46 @@
                         <button class="btn btn-default btn-xs dropdown-toggle drop-edit" type="button" data-toggle="dropdown">Page
                         <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a href="pa11.php?var1=<?php echo $ds['emp_code']; ?>" target="_blank">1</a></li>                            
-                            <li><a href="pa12.php?var2=<?php echo $ds['emp_code']; ?>" target="_blank">2</a></li>
-                            <li><a href="pa13.php?var3=<?php echo $ds['emp_code']; ?>" target="_blank">3</a></li>
+                            <li>
+                                <a href="pa11.php
+                                ?var1=<?php echo $ds['emp_code']; ?>
+                                &var2=<?php echo $ds['emp_picture']; ?>
+                                &var3=<?php echo $ds['emp_tfname']; ?>
+                                &var4=<?php echo $ds['emp_tlname']; ?>" 
+                                target="_blank">
+                                1.1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pa21.php
+                                ?var1=<?php echo $ds['emp_code']; ?>
+                                &var2=<?php echo $ds['emp_picture']; ?>
+                                &var3=<?php echo $ds['emp_tfname']; ?>
+                                &var4=<?php echo $ds['emp_tlname']; ?>" 
+                                target="_blank">
+                                2.1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pa22.php
+                                ?var1=<?php echo $ds['emp_code']; ?>
+                                &var2=<?php echo $ds['emp_picture']; ?>
+                                &var3=<?php echo $ds['emp_tfname']; ?>
+                                &var4=<?php echo $ds['emp_tlname']; ?>" 
+                                target="_blank">
+                                2.2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pa41.php
+                                ?var1=<?php echo $ds['emp_code']; ?>
+                                &var2=<?php echo $ds['emp_picture']; ?>
+                                &var3=<?php echo $ds['emp_tfname']; ?>
+                                &var4=<?php echo $ds['emp_tlname']; ?>" 
+                                target="_blank">
+                                4.1
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </td>

@@ -53,8 +53,8 @@
                     <td align='center'>
                         <img src='<?php echo $ds['emp_picture'] . '?v=' . date("YmdHis"); ?>' height='72' width='48'>                        
                     </td>
-                    <td class='text-center'>
-                        <a href='#' onclick="javascript:showModalUpdate_emp_master(
+                    <td class='text-center'>                        
+                        <a href='#' onclick="javascript:showModalUpdate_emp_master(                            
                             '<?php echo $ds['emp_code']; ?>',
                             '<?php echo $ds['emp_ttitle']; ?>',
                             '<?php echo $ds['emp_tfname']; ?>',
@@ -86,13 +86,13 @@
                             '<?php echo $ds['edu_major1']; ?>',
                             '<?php echo $ds['edu_grade1']; ?>',
                             '<?php echo $ds['edu_graduated_year1']; ?>',
-                            '<?php echo $ds['edu_level2']; ?>',
-                            '<?php echo $ds['edu_detail2']; ?>',
-                            '<?php echo $ds['edu_institute2']; ?>',
-                            '<?php echo $ds['edu_faculty2']; ?>',
-                            '<?php echo $ds['edu_major2']; ?>',
-                            '<?php echo $ds['edu_grade2']; ?>',
-                            '<?php echo $ds['edu_graduated_year2']; ?>'
+                            '<?php //echo $ds['edu_level2']; ?>',
+                            '<?php //echo $ds['edu_detail2']; ?>',
+                            '<?php //echo $ds['edu_institute2']; ?>',
+                            '<?php //echo $ds['edu_faculty2']; ?>',
+                            '<?php //echo $ds['edu_major2']; ?>',
+                            '<?php //echo $ds['edu_grade2']; ?>',
+                            '<?php //echo $ds['edu_graduated_year2']; ?>'
                             )";>
                             <span class='fa fa-pencil-square-o fa-lg'></span>
                         </a>

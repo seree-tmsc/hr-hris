@@ -366,9 +366,9 @@
                         </div>
                         <div class="col-lg-2">                                 
                             <select required placeholder ="Title" class="form-control" name="update_emp_etitle" id="update_emp_etitle">
-                                <option value="MR">MR.</option>
-                                <option value="MS">MS.</option>
-                                <option value="MRS">MRS.</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Mis.">Mrs.</option>
                             </select>
                         </div>
                         <div class="col-lg-2">
@@ -406,31 +406,37 @@
                             <label>ข้อมูลหน่วยงาน : *</label>
                             <select  class="form-control" name="update_job_business" id="update_job_business">
                                 <option value="-">-</option>
-                                <option value="IR">1.IR</option>
-                                <option value="UU">2.UU</option>
-                                <option value="TECH">3.TECH</option>
-                                <option value="SCM">4.SCM</option>
-                                <option value="BIZ">5.BIZ</option>
-                                <option value="MGT">6.MGT</option>
+                                <option value="BIZ">BIZ</option>
+                                <option value="GN">GN</option>
+                                <option value="IRS">IRS</option>
+                                <option value="IRW">IRW</option>
+                                <option value="MCI">MCI</option>
+                                <option value="MGT-IR">MGT-IR</option>
+                                <option value="OUTSOURCE">OUTSOURCE</option>
+                                <option value="SHE&Q">SHE&Q</option>
+                                <option value="TECH">TECH</option>
+                                <option value="UTE">UTE</option>
+                                <option value="UU">UU</option>
                             </select>                                        
                         </div>
                         <div class="col-lg-2">
                             <label>แผนก</label>
                             <select  class="form-control" name="update_job_department" id="update_job_department">
                                 <option value="-">-</option>
-                                <option value="RD">R&D</option>
-                                <option value="SALES">SAL</option>
-                                <option value="ENG">ENG</option>
-                                <option value="PRO">PRO</option>
-                                <option value="PD-PLAN">PD-PLAN</option>
-                                <option value="PUR">PUR</option>
-                                <option value="WH">WH</option>
-                                <option value="ACC">ACC</option>
-                                <option value="HR">HR</option>
-                                <option value="IT">IT</option>
+                                <option value="ACC">ACCOUNTING</option>
+                                <option value="COM">COMPUTER</option>
+                                <option value="ENG">ENGINEERING</option>
                                 <option value="MCI">MCI</option>
-                                <option value="MGT">MGT</option>
-                                <option value="SHEQ">SHE&Q</option>
+                                <option value="MG">MANAGEMENT</option>
+                                <option value="MG2">MANAGEMENT-2</option>
+                                <option value="OUTSOURCE">OUTSOURCE</option>
+                                <option value="PER">PERSINAL</option>
+                                <option value="PRO">PRODUCTION</option>
+                                <option value="PUR">PURCHASING</option>
+                                <option value="R&D">R&D</option>
+                                <option value="SAL">SALES</option>
+                                <option value="SHE&Q">SHE&Q</option>
+                                <option value="WH">WAREHOUSE</option>
                             </select>                                        
                         </div>
                         <div class="col-lg-2">
@@ -449,16 +455,16 @@
                             <label>Job Grade</label>
                             <select required class="form-control" name="update_job_grade" id="update_job_grade">
                                 <option value="-">-</option>
-                                <option value="JG7">JG 7</option>
-                                <option value="JG8">JG 8</option>
-                                <option value="JG9">JG 9</option>
-                                <option value="JG10">JG 10</option>
-                                <option value="JG11">JG 11</option>
-                                <option value="JG12">JG 12</option>
-                                <option value="JG13">JG 13</option>
-                                <option value="JG14">JG 14</option>
-                                <option value="JG15">JG 15</option>
-                                <option value="JG16">JG 16</option>                                
+                                <option value="JG-07">JG 7</option>
+                                <option value="JG-08">JG 8</option>
+                                <option value="JG-09">JG 9</option>
+                                <option value="JG-10">JG 10</option>
+                                <option value="JG-11">JG 11</option>
+                                <option value="JG-12">JG 12</option>
+                                <option value="JG-13">JG 13</option>
+                                <option value="JG-14">JG 14</option>
+                                <option value="JG-15">JG 15</option>
+                                <option value="JG-16">JG 16</option>                                
                             </select>
                         </div>
                         <div class="col-lg-2">
@@ -500,13 +506,13 @@
                             <label> การศึกษา :</label>                               
                             <select  placeholder ="Title" class="form-control" name="update_edu_level1" id="update_edu_level1">
                                 <option value="-">-</option>
-                                <option value="PHD">ป.เอก</option>
-                                <option value="MS">ป.โท</option>
-                                <option value="BC">ป.ตรี</option>
-                                <option value="H">ปวส.</option>
-                                <option value="L">ปวช.</option>
-                                <option value="M">มัธยมศึกษา</option>
-                                <option value="P">ประถมศึกษา</option>
+                                <option value="ปริญญาเอก">ปริญญาเอก</option>
+                                <option value="ปริญญาโท">ปริญญาโท</option>
+                                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                                <option value="ปวส">ปวส.</option>
+                                <option value="ปวช">ปวช.</option>
+                                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                                <option value="ประถมศึกษา">ประถมศึกษา</option>
                             </select>
                         </div>
                         <div class="col-lg-2">
@@ -518,7 +524,7 @@
                             <input type="text" class="form-control" name="update_edu_institute1" id="update_edu_institute1" >
                         </div>
                         <div class="col-lg-3">
-                            <label>คณะ</label>>
+                            <label>คณะ</label>
                             <input type="text" class="form-control" name="update_edu_faculty1" id="update_edu_faculty1" >
                         </div>
                         <div class="col-lg-2">

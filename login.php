@@ -1,5 +1,5 @@
 <?php
-    /*include_once('my_function.php');*/
+    include_once('include/my_function.php');
     include_once('include/chk_Session.php');    
     $message = "";
 
@@ -33,7 +33,12 @@
                         $_SESSION["ses_email"] = $result[0]["user_email"];
                         $_SESSION["ses_user_type"] = $result[0]["user_type"];
                         $_SESSION["ses_emp_code"] = $result[0]["emp_code"];
-                        header("location:p11.php");
+                        
+                        $message = "Please be informed that USER-ID = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS ';
+                        $token = $myToken;
+                        send_notification($message, $token);
+                        
+                        header("location:p11.php");                        
                     }
                     else
                     {

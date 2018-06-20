@@ -86,7 +86,7 @@
 
         echo "<div class='col-md-10'>";
         echo "<div class='form-inline'>";        
-        echo "<a href='include/exportArrToCsv.php?param1=$myJSON' target='_blank'>Export to CSV File</a>";
+        //echo "<a href='include/exportArrToCsv.php?param1=$myJSON' target='_blank'>Export to CSV File</a>";
         /*
         echo "<a href='exportArrToCsv.php?param1=$myJSON' 
                 onclick='window.open('exportArrToCsv.php?param1=$myJSON', 'name', 'width=500' , 'height=500'); 

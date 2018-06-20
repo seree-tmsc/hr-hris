@@ -22,7 +22,7 @@
 
         $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
         $strSql .= "FROM MAS_Performance P ";
-        $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
+        $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";        
         $strSql .= "ORDER BY P.Emp_Code ";
 
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  

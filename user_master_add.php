@@ -24,8 +24,8 @@ try
     $strSql .= "'" . $_POST["add_user_email"] . "',";
     $strSql .= "cast('" . $aElement[0] . "@1234' as binary)" . ",";
     $strSql .= "'" . $_POST["add_user_type"] . "',";
-    $strSql .= "'" . date("Y/m/d") . "') ";
-    //echo $strSql . "<br>";
+    $strSql .= "'" . date("Y/m/d") . "', '') ";
+    echo $strSql . "<br>";
 
     $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
     $statement->execute();  
@@ -45,7 +45,6 @@ try
                 window.location.href='admin_p12.php'; 
             </script>";            
     }
-        
 }
 catch(PDOException $e)
 {

@@ -15,11 +15,21 @@
 
     if ($nRecCount == 1)
     {
-        $ds = $statement->fetch(PDO::FETCH_NAMED);        
+        $ds = $statement->fetch(PDO::FETCH_NAMED);
+        /*
         echo "<div class='user' align='center'>";
-        echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' class='img-circle' alt='Cinque Terre' height='196' width='128'> ";        
+        echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='128'> ";
         echo "</div>";
         echo "<br>";
+        */
+        echo "<div class='panel panel-primary text-center'>";
+        echo "<div class='panel-heading'>Picture";
+        echo "</div>";
+        echo "<div class='panel-body'>";
+        echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='128'> ";
+        echo "</div>";
+        echo "</div>";
+
     }
     else
     {
@@ -63,20 +73,23 @@
         <a href="p41.php" class="list-group-item">4.1 Welfare & Benefit</a>
     </div>
 
-    <a href="#idp_menu" class="list-group-item" data-toggle="collapse">
-        5. IDP
-        <i class="fa fa-line-chart fa-lg btn pull-right"></i>
+    <a href="#ed_menu" class="list-group-item" data-toggle="collapse">
+        5. Employee Development
+        <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
     </a>
-    <div class="list-group collapse" id="idp_menu">
-        <a href="#" class="list-group-item">5.1 IDP</a>
+    <div class="list-group collapse" id="ed_menu">
+        <a href="#" class="list-group-item">5.1 Training Roadmap</a>
+        <a href="#" class="list-group-item">5.2 IDP</a>
+        <a href="#" class="list-group-item">5.3 Training Record</a>
+        <a href="#" class="list-group-item">5.4 e-Learning</a>
     </div>
 
     <a href="#roadmap_menu" class="list-group-item" data-toggle="collapse">
-        6. Roadmap
-        <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
+        6. -
+        <!--<i class="fa fa-line-chart fa-lg btn pull-right"></i>-->
     </a>
     <div class="list-group collapse" id="roadmap_menu">
-        <a href="#" class="list-group-item">6.1 Roadmap</a>
+        <!--<a href="#" class="list-group-item">6.1 Roadmap</a>-->
     </div>
 
     <a href="#pms_menu" class="list-group-item" data-toggle="collapse">

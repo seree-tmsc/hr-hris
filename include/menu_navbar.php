@@ -14,7 +14,7 @@
                 <li>
                     <a href="p11.php">
                         <span class="fa fa-user-circle fa-lg"></span>
-                        My Profile
+                        Main Menu
                     </a>                            
                 </li>
             </ul>

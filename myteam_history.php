@@ -41,7 +41,7 @@
     $nRecCount = $statement->rowCount();
     //echo "Record Count = " . $nRecCount ."<br>";
     
-    if ($nRecCount == 1)    
+    if ($nRecCount == 1)
     {
         $ds = $statement->fetch(PDO::FETCH_NAMED);
         $tmpAllmyteam = $ds['user_myteam'];
@@ -61,7 +61,7 @@
 
             $tmpAllmyteam = substr($tmpAllmyteam,strpos($tmpAllmyteam,';')+1,strlen($tmpAllmyteam));
             //echo "tmpAll = " . $tmpAllmyteam . "<br>";
-        }        
+        }
         require_once("myteam_list.php");
     }
 ?>

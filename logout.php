@@ -1,9 +1,9 @@
 <?php
-    include_once('my_function.php');
+    include_once('include/my_function.php');
     session_start();
-    $message = $_SESSION['ses_email'] . ' ' . ' Logout from HRIS ';
+    $message = "Please be informed that USER-ID = " . $_SESSION['ses_email'] . ' ' . ' was logout from HRIS ';
     $token = $myToken;
-    //send_line_notify($message, $token);
+    send_notification($message, $token);
 
     unset ( $_SESSION['ses_email'] );
     unset ( $_SESSION['ses_status'] );
