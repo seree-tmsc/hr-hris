@@ -7,14 +7,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="images/tmsc-logo.png" alt="" width="86">
+            <img src="images/tmsc-new-logo-128.png" alt="" width="86">
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="p11.php">
                         <span class="fa fa-user-circle fa-lg"></span>
-                        Main Menu
+                        Main Page
                     </a>                            
                 </li>
             </ul>

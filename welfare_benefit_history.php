@@ -16,15 +16,13 @@
     $nRecCount = $statement->rowCount();
     //echo "Record Count = " . $nRecCount ."<br>";
 
+    echo "<h3 align='center'><font color='red'>Wellfare Benefit History Data</font></h3>";
+
     if ($nRecCount >0)
     {
-?>        
-        <h3 align="center"><font color="red">Wellfare Benefit History Data</font></h3>
-
+?>                
         <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-10">
+            <div class="col-lg-12">
                 <div class="form-inline">
                     Search : 
                     <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by year.." title="Type year">
@@ -36,13 +34,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1">
-            </div>
         </div>
         <br>
 
         <div class='table-responsive'>
-            <table class='table table-bordered table-hover' id='myTable' style='width:85%;' align="center">
+            <table class='table table-bordered table-hover' id='myTable' style='width:100%;' align="center">
                 <thead>
                     <tr class='info'>
                         <th style='width:10%;' class='text-center'>Year</th>
@@ -144,8 +140,8 @@
                         array_push($dataArray, $rowArray);
                     }
 
-                    $fileName = "tmpfile.csv";
-                    $fp = fopen('tmpfile.csv', 'w');
+                    $fileName = "tmpWelfare.csv";
+                    $fp = fopen('tmpWelfare.csv', 'w');
                     //for support Thai 
                     fputs($fp,(chr(0xEF).chr(0xBB).chr(0xBF)));
 

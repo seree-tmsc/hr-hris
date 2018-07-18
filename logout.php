@@ -1,7 +1,8 @@
 <?php
     include_once('include/my_function.php');
     session_start();
-    $message = "Please be informed that USER-ID = " . $_SESSION['ses_email'] . ' ' . ' was logout from HRIS ';
+    $client_ip = get_client_ip();
+    $message = "Please be informed that USER-ID = " . $_SESSION['ses_email'] . ' ' . ' was logout HRIS from client no.' . $client_ip;
     $token = $myToken;
     send_notification($message, $token);
 

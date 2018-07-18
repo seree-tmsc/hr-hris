@@ -16,12 +16,12 @@
     $nRecCount = $statement->rowCount();
     //echo "Record Count = " . $nRecCount ."<br>";
 
+    echo "<h3 align='center'><font color='red'>Performance History Data</font></h3>";
     if ($nRecCount >0)
     {
-?>        
-        <h3 align="center"><font color="red">Performance History Data</font></h3>
+?>                
         <div class='table-responsive'>
-            <table class='table table-bordered table-hover' id='myTable' style='width:60%;' align="center">
+            <table class='table table-bordered table-hover' id='myTable' style='width:100%;' align="center">
                 <thead>
                     <tr class='info'>                
                         <th style='width:30%;' class='text-center'>YEAR</th>

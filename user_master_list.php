@@ -21,7 +21,8 @@
         $strSql = "SELECT M.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
         $strSql .= "FROM MAS_Users_Id M ";
         $strSql .= "JOIN Emp_Main E ON M.emp_code = E.emp_code ";
-        $strSql .= "ORDER BY Emp_Code ";
+        $strSql .= "ORDER BY M.user_type, E.emp_Code ";
+        //echo $strSql . "<br>";
 
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
         $statement->execute();  

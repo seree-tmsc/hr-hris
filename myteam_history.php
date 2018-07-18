@@ -8,7 +8,7 @@
     <div class="col-md-12">
         <div class="form-inline">
             Search : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by department.." title="Type department">
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by Biz..." title="Type department">
             <div class="pull-right">
                 <!--
                 <button class="btn btn-success" data-toggle="modal" data-target="#export_modal">
@@ -48,20 +48,31 @@
         $business_condition = "";
         $departmnet_condition = "";
         $condition = "";
-        //echo $tmpAllmyteam . "<br>";
+        //echo "user_myteam = " . $tmpAllmyteam . "<br>";
 
         while(strlen($tmpAllmyteam) != 0)
         {            
             $tmpmyteam = substr($tmpAllmyteam,0,strpos($tmpAllmyteam,';'));
             //echo strpos($tmpAllmyteam,';') . "<br>";
-            //echo $tmpmyteam . "<br>";
+            //echo "myteam = " . $tmpmyteam . "<br>";
+
             $business_condition = "job_business = '" . substr($tmpmyteam, 1, strpos($tmpmyteam,',')-1) . "' ";
             $department_condition = "job_department = '" . substr($tmpmyteam, strpos($tmpmyteam,',')+1, strpos($tmpmyteam,']') - strpos($tmpmyteam,',') - 1) . "' ";
             $condition .= "OR (" . $business_condition . " AND " . $department_condition . ") ";
+            //echo "codition = " . $condition . "<br>";
 
             $tmpAllmyteam = substr($tmpAllmyteam,strpos($tmpAllmyteam,';')+1,strlen($tmpAllmyteam));
             //echo "tmpAll = " . $tmpAllmyteam . "<br>";
+
         }
-        require_once("myteam_list.php");
+
+        if(strlen($condition) != 0)
+        {
+            require_once("myteam_list.php");
+        }
+        else
+        {
+            echo "No information of my team data";
+        }
     }
 ?>

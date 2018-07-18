@@ -34,7 +34,8 @@
                         $_SESSION["ses_user_type"] = $result[0]["user_type"];
                         $_SESSION["ses_emp_code"] = $result[0]["emp_code"];
                         
-                        $message = "Please be informed that USER-ID = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS ';
+                        $client_ip = get_client_ip();
+                        $message = " Please be informed that USER-ID = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS from client no. ' . $client_ip;
                         $token = $myToken;
                         send_notification($message, $token);
                         
@@ -96,13 +97,10 @@
             <br>
             <!-- Begin Row #2 -->
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                </div>
-
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-lg-offset-4">
                     <div class="panel panel-default">
                         <div class="panel-heading" align="center" >
-                            <img src="images/tmsc-longlogo.png">                            
+                            <img src="images/tmsc-new-logo-1.png">
                         </div>
 
                         <div class="panel-body">
@@ -128,7 +126,7 @@
                             <?php
                             if(isset($message))
                             {
-                                echo '<label class="text-danger">' . $message . '</label>';
+                                echo "<label style='color:red'>" . $message . "</label>";
                             }
                             ?>          
                         </div>

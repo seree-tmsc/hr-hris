@@ -21,7 +21,7 @@
         echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='128'> ";
         echo "</div>";
         echo "<br>";
-        */
+        */        
         echo "<div class='panel panel-primary text-center'>";
         echo "<div class='panel-heading'>Picture";
         echo "</div>";
@@ -78,9 +78,9 @@
         <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="ed_menu">
-        <a href="#" class="list-group-item">5.1 Training Roadmap</a>
+        <a href="admin_p53.php" class="list-group-item">5.1 Training Roadmap</a>  
         <a href="#" class="list-group-item">5.2 IDP</a>
-        <a href="#" class="list-group-item">5.3 Training Record</a>
+        <a href="p53.php" class="list-group-item">5.3 Training Record</a>
         <a href="#" class="list-group-item">5.4 e-Learning</a>
     </div>
 
@@ -121,6 +121,7 @@
         <i class="fa fa-user-plus fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="myteam_menu">
-        <a href="pa1.php" class="list-group-item">10.1 My Team</a>
+        <a href="pa1.php" class="list-group-item">10.1 My Team Information</a>
+        <a href="pa2.php" class="list-group-item">10.1 My Team Performance</a>
     </div>
 </div>

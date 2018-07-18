@@ -9,7 +9,14 @@
         <div class="form-inline">
             Search : 
             <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by user names.." title="Type user name">
-    
+
+            <div class="pull-left">
+                <button class="btn btn-success" data-toggle="modal" data-target="#CriteriaModal">
+                    <span class="glyphicon glyphicon-plus"></span> 
+                    SELECT CRITERIA
+                </button>
+            </div>
+
             <div class="pull-right">
                 <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">
                     <span class="glyphicon glyphicon-plus"></span> 
@@ -24,7 +31,7 @@
         <p></p>
         <!--<h5>User Data:</h5>-->
         <?php
-            include "performance_list.php";                    
+            include "Training_Record_List.php";                    
         ?>
     </div>
 </div>        
@@ -38,15 +45,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Add New Record</h4>
+                <h4 class="modal-title" id="myModalLabel">Add Training Record</h4>
                 <br>
                 <div class="col-lg-12">
-                    <p>Definition:</p>
-                    <p>Grade: O = Outstanding [score >= 95%] / 
-                    A = Above Standard [95% > score >= 85%] / 
-                    S = Standard [85% > score >= 75%] / 
-                    N = Need Imprvement [75% > score >= 65%] /
-                    F = Fail [score < 65%]</p>
+                   
                 </div>
             </div>
             <form class="form-horizontal" role="form" action="performance_add.php" method="post">
@@ -71,30 +73,113 @@
                     </div>
                     <div class="form-group">
                         <div class="col-lg-2">
-                            <label>Year:</label>
-                            <select readonly class="form-control" name="add_performance_year">                                    
-                                <option value="<?php echo date('Y')?>"><?php echo date('Y')?></option>                                    
+                            <label>Dept:</label>
+                            <select class="form-control" name="sel_Dept">
+                                            <option value="A">ACC</option>
+                                            <option value="E">EN</option>
+                                            <option value="EN">ENG</option>
+                                            <option value="H">HR</option>
+                                            <option value="I">IT</option>
+                                            <option value="M">MGT</option>
+                                            <option value="P">PD-PLAN</option>
+                                            <option value="PR">PRO</option>
+                                            <option value="R">R&D</option>
+                                            <option value="S">SHE</option>
+                                            <option value="SH">SHE-Q</option>
+                                            <option value="W">WH</option>
+                                            
                             </select>
                         </div>
                         <div class="col-lg-2">
-                            <label>KPI (%):</label>
-                            <input type="number" required placeholder ="KPI Score" class="form-control" id="add_performance_kpi" name="add_performance_kpi" 
-                            onchange="Func_AddValue('add_performance_kpi','add_performance_com','nTotal','cGrade','#add_performance_tot','#add_performance_grade')">
+                            <label>Position:</label>
+                            <select class="form-control" name="sel_Posi">
+                                            <option value="AC">Ac</option>
+                                            <option value="AD">Advisor</option>
+                                            <option value="AM">AM</option>
+                                            <option value="C">C</option>
+                                            <option value="CH">Chemist</option>
+                                            <option value="CHI">Chief</option>
+                                            <option value="DA">DAI</option>
+                                            <option value="DI">DIR</option>
+                                            <option value="F">Foreman</option>
+                                            <option value="M">MGR</option>
+                                            <option value="OP">OPr</option>
+                                            <option value="SM">SMG</option>
+                                            <option value="SP">Specialist</option>
+                                            <option value="Sro">Sr.Opr</option>
+                                            <option value="Srt">Sr.Staff</option>
+                                            <option value="SrC">Sr.Chemist</option>
+                                            <option value="SrS">Sr.Staff</option>
+                                            <option value="St">Staff</option>                                           
+                            </select>
                         </div>
                         <div class="col-lg-3">
-                            <label>Competency (%):</label>
-                            <input type="number" required placeholder ="Competency Score" class="form-control" id="add_performance_com" name="add_performance_com" 
-                            onchange="Func_AddValue('add_performance_kpi','add_performance_com','nTotal','cGrade','#add_performance_tot','#add_performance_grade')">
+                            <label>Site:</label>
+                            <select class="form-control" name="sel_Site">
+                                            <option value="W">WG</option>
+                                            <option value="S">SL</option>
+                            </select>
                         </div>
                         <div class="col-lg-3">
-                            <label>Total Score (%):</label>                                
-                            <p id="nTotal" class="form-control" readonly></p>
-                            <input type="hidden" id='add_performance_tot' name='add_performance_tot'>
+                            <label>Join-Date:</label>
+                            <input type="date" class="form-control" value="<?php echo date("Y-m-d");?>">
                         </div>
                         <div class="col-lg-2">
-                            <label>Grade:</label>
-                            <p id="cGrade" class="form-control" readonly></p>
-                            <input type="hidden" id='add_performance_grade' name='add_performance_grade'>
+                            <label>Status:</label>
+                            <select class="form-control" name="sel_Status">
+                                            <option value="A">Active</option>
+                                            <option value="R">Resign</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-2">
+                            <label>start-Date:</label>
+                            <input type="date" class="form-control" value="<?php echo date("Y-m-d");?>">
+                        </div>
+                        <div class="col-lg-2">
+                            <label>End-Date:</label>
+                            <input type="date" class="form-control" value="<?php echo date("Y-m-d");?>">
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Time:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Training-Day:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <label>Course-Name:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div> 
+                        <div class="col-lg-6">
+                            <label>Institute:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div> 
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <label>Location:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div> 
+                        <div class="col-lg-2">
+                            <label>Type-Course:</label>
+                            <select class="form-control" name="sel_TypeC">
+                                            <option value="E">EXT</option>
+                                            <option value="I">INT</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label>Year:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
+                        </div>
+                        <div class="col-lg-2">
+                            <label>Cost:</label>
+                            <Input autofocus type="text" require class="form-control" name="paramStatus">
                         </div>
                     </div>
                 </div>
@@ -115,18 +200,13 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Update Record</h4>
+                <h4 class="modal-title" id="myModalLabel">Update Training Record</h4>
                 <br>
                 <div class="col-lg-12">
-                    <p>Definition:</p>
-                    <p>Grade: O = Outstanding [score >= 95%] / 
-                    A = Above Standard [95% > score >= 85%] / 
-                    S = Standard [85% > score >= 75%] / 
-                    N = Need Imprvement [75% > score >= 65%] /
-                    F = Fail [score < 65%]</p>
+
                 </div>
             </div>
-            <form class="form-horizontal" role="form" action="performance_update.php" method="post">
+            <form class="form-horizontal" role="form" action="Training_Record_update.php" method="post">
                 <div class="modal-body">
                     <div class="form-group">
                         <div class="col-lg-4">
