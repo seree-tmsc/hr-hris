@@ -16,12 +16,23 @@
     if ($nRecCount == 1)
     {
         $ds = $statement->fetch(PDO::FETCH_NAMED);
-        /*
+        
+        //echo "<div class='user' align='center'>";
         echo "<div class='user' align='center'>";
-        echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='128'> ";
+        //echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='136'> ";
+        echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' width='196'> ";
         echo "</div>";
+        echo "<div class='user' align='center'>";
+        echo "<label>" . $ds['emp_code'] . "</label>";
         echo "<br>";
-        */        
+        echo "<label>" . $ds['job_business'] . ' / ' . $ds['job_department'] . "</label>";
+        echo "<br>";
+        echo "<label>" . $ds['emp_etitle'] . $ds['emp_efname'] . ' ' . $ds['emp_elname'] . "</label>";
+        echo "<br>";
+        echo "<label> </label>";
+        echo "</div>";
+        
+        /*  
         echo "<div class='panel panel-primary text-center'>";
         echo "<div class='panel-heading'>Picture";
         echo "</div>";
@@ -29,7 +40,7 @@
         echo "<img src='". $ds['emp_picture'] . "?v=" . date("YmdHis") . "' height='196' width='128'> ";
         echo "</div>";
         echo "</div>";
-
+        */
     }
     else
     {
@@ -78,7 +89,7 @@
         <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="ed_menu">
-        <a href="admin_p53.php" class="list-group-item">5.1 Training Roadmap</a>  
+        <a href="p51.php" class="list-group-item">5.1 Training Roadmap</a>  
         <a href="#" class="list-group-item">5.2 IDP</a>
         <a href="p53.php" class="list-group-item">5.3 Training Record</a>
         <a href="#" class="list-group-item">5.4 e-Learning</a>
@@ -121,7 +132,10 @@
         <i class="fa fa-user-plus fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="myteam_menu">
-        <a href="pa1.php" class="list-group-item">10.1 My Team Information</a>
-        <a href="pa2.php" class="list-group-item">10.1 My Team Performance</a>
+        <a href="pa1.php" class="list-group-item">10.1 My Team HR Information</a>
+        <a href="pa2.php" class="list-group-item">10.2 My Team Performance</a>
+        <a href="pa3.php" class="list-group-item">10.3 My Team Promotion</a>
+        <a href="pa51.php" class="list-group-item">10.4 My Team Training Roadmap</a>
+        <a href="pa53.php" class="list-group-item">10.5 My Team Training Record</a>
     </div>
 </div>

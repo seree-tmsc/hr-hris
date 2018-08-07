@@ -48,6 +48,7 @@
                             <label>Employee List :</label>
                             <?php require_once "dtl_emp_list.php"; ?>
                         </div>
+
                         <div class="col-lg-4">
                             <label>Emp-Code:</label>
                             <p id="var1" class="form-control" disabled></p>

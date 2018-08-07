@@ -20,7 +20,8 @@
             while ($ds = $statement->fetch(PDO::FETCH_NAMED))            
             {                
                 //echo $ds['Emp_Code'] . '<br>';
-                $html_tag .= "<option value=" . $ds["emp_code"] . "/" . $ds["emp_tfname"] . "/" . $ds["emp_tlname"] . ">" . "Code-FName-LName" . "</option>";
+                //$html_tag .= "<option value='" . $ds["emp_code"] . "/" . $ds["emp_tfname"] . "/" . $ds["emp_tlname"] . "'>" . "Code-FName-LName" . "</option>";
+                $html_tag .= "<option value='" . $ds["emp_code"] . "/" . $ds["emp_tfname"] . "/" . $ds["emp_tlname"] . "'>" . "</option>";
             }
             $html_tag .= "</datalist>";            
         }

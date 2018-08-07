@@ -17,8 +17,12 @@ function send_notification($message, $token)
 
         return $result;
     }
-
+// Notify by Seree
 $myToken = 'GGjBQYhFzjoYASqoNeeW8OLplYJXpw61mNo2ve7GJqY';
+
+// Testing LINE Notify
+//$myToken = '8p3FR6ybmkaijsXbqPIjhXa4tKD3R9sWm4VNMThQbfc';
+
 
 
 // Function to get the client IP address

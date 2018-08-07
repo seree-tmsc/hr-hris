@@ -146,6 +146,13 @@
                                 Welfare
                                 </a>
                             </li>
+                            <li>
+                                <a href="pa53.php
+                                ?var1=<?php echo $ds['emp_code']; ?>"                                
+                                target="_blank">
+                                Training Rec.
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </td>

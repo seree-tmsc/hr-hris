@@ -1,2 +1,3 @@
-<img class="img-responsive" src="images/hr5-1.png" alt="Chania">
-<p></p>
+<div>
+    <img class="img-responsive" src="images/Banner 02.png" alt="Chania">
+</div>

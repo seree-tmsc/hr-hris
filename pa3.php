@@ -14,11 +14,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once("include/library.php"); ?>
-    <?php require_once("include/library_modal_emp_master.php"); ?>
+    <?php require_once("include/library.php"); ?>    
 </head>
 
 <body class="bg-dark">
+
     <!-- Begin Body page -->
     <div class="container">
 
@@ -38,16 +38,13 @@
             <!-------------------- -->
             <!-- coluimn #2 8 unit -->
             <!-------------------- -->
-            <div class="col-lg-9 col-md-6">
-                <!--
+            <div class="col-lg-9 col-md-6">            
                 <div class="user" align="center">
-                    <?php //require_once("include/label_header.php"); ?>
-                </div>
-                -->
-                <?php require_once("include/label_header.php"); ?>
-                <?php 
+                    <?php require_once("include/label_header.php"); ?>
+                </div>                
+                <?php                     
                     $param_emp_code=$_SESSION["ses_emp_code"];
-                    require_once("myprofile_display.php"); 
+                    require_once("myteam_promotion_history.php"); 
                 ?>
             </div>
         </div>        
@@ -55,7 +52,7 @@
     </div>
     <!-- End Body page -->
 
-    <!-- Left slide menu -->
+    <!--Test Begin left slide menu -->
     <?php
         if(strtoupper($_SESSION["ses_user_type"]) == 'A')
         {
@@ -64,13 +61,14 @@
             echo "</div>";            
         }
     ?>
-    <!-- End Left slide menu -->
+    <!--/Test End left slide menu -->
 
     <!-- Logout Modal-->
     <?php require_once("include/modal_logout.php"); ?>
 
     <!-- Change Password Modal-->
     <?php require_once("include/modal_chgpassword.php"); ?>
+
 </body>
 </html>
 

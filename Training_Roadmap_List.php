@@ -19,7 +19,15 @@
 
         include('include/db_Conn.php');
 
-        $strSql = "SELECT Dept,Module,Code_Course,Course_Name,Timeline " ;
+        $Sql = "SELECT Job_business,Job_department,Code_Course,Course_name,Section,Position,JG " ;
+        $Sql .= "FROM MAS_Training_Roadmap " ;
+        $Sql .= "WHERE Job_business='". $ds["Job_business"] . "' and Job_department='". $ds["job_department"] ."' and Position ='". $ds["job_position"] ."' and JG='". $ds["job_grade"] ."' ";
+        echo $Sql . "<br>";
+        $statement = $conn->prepare( $Sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
+        $statement->execute();  
+        $nRecCount = $statement->rowCount();
+
+   /*     $strSql = "SELECT Dept,Module,Code_Course,Course_Name,Timeline " ;
         $strSql .= "FROM  MAS_Training_Course ";
         $strSql .= "WHERE Dept='" . $_POST["Select_By_DEPT"] . "' and Module='" . $_POST["Select_By_MODULE"] . "' "; 
         $strSql .= "ORDER BY Code_Course ";
@@ -27,7 +35,7 @@
 
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
         $statement->execute();  
-        $nRecCount = $statement->rowCount();
+        $nRecCount = $statement->rowCount();*/
         if ($nRecCount >0)
         {
             while ($ds = $statement->fetch(PDO::FETCH_NAMED))

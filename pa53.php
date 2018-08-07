@@ -1,5 +1,5 @@
 <?php
-    include_once('include/chk_Session.php');
+    include_once('include/chk_Session.php');    
     if($user_email == "")
     {
         echo "<script> 
@@ -8,7 +8,7 @@
             </script>";
     }
     else
-    {
+    { 
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
     <div class="container">
 
         <!-- Begin Static navbar -->
-        <?php require_once("include/menu_navbar.php"); ?>
+        <?php //require_once("include/menu_navbar.php"); ?>
         <!-- End Static navbar -->
 
         <!-- Begin content page-->
@@ -31,23 +31,23 @@
             <!-------------------- -->
             <!-- coluimn #1 3 unit -->
             <!-------------------- -->
+            <!--
             <div class="col-lg-3 col-md-6">                        
-                <?php require_once("include/menu_user.php"); ?>
+                <?php //require_once("include/menu_user.php"); ?>
             </div>
+            -->
 
             <!-------------------- -->
             <!-- coluimn #2 8 unit -->
             <!-------------------- -->
-            <div class="col-lg-9 col-md-6">
-                <!--
+            <div class="col-lg-12">            
                 <div class="user" align="center">
                     <?php //require_once("include/label_header.php"); ?>
-                </div>
-                -->
-                <?php require_once("include/label_header.php"); ?>
+                </div>                
                 <?php 
                     $param_emp_code=$_SESSION["ses_emp_code"];
-                    require_once("myprofile_display.php"); 
+                    //$param_emp_code=$_GET["var1"];
+                    require_once("myteam_Training_Record.php"); 
                 ?>
             </div>
         </div>        
@@ -71,6 +71,8 @@
 
     <!-- Change Password Modal-->
     <?php require_once("include/modal_chgpassword.php"); ?>
+
+
 </body>
 </html>
 
