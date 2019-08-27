@@ -1,5 +1,5 @@
 <?php
-    $srv = 'SEREE-PC17\SQLEXPRESS';
+    $srv = 'SEREE-PC17\TMSCSQLEXP1';
     $usr = 'sa';
     $pwd = 'password@1';
     $db = 'web_training';

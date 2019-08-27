@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
     <?php require_once("include/library.php"); ?>
-    <?php require_once("include/library_modal_emp_master.php"); ?>
+    <?php //require_once("include/library_modal_emp_master.php"); ?>
 </head>
 
 <body class="bg-dark">
@@ -23,7 +23,7 @@
     <div class="container">
 
         <!-- Begin Static navbar -->
-        <?php //require_once("include/menu_navbar.php"); ?>
+        <?php require_once("include/menu_navbar.php"); ?>
         <!-- End Static navbar -->
 
         <!-- Begin content page-->
@@ -33,7 +33,7 @@
             <!-------------------- -->
             <!--
             <div class="col-lg-3 col-md-6">                        
-                <?php //require_once("include/menu_user.php"); ?>
+                <?php require_once("include/menu_user.php"); ?>
             </div>
             -->
 
@@ -57,7 +57,7 @@
 
     <!-- Left slide menu -->
     <?php
-        if(strtoupper($_SESSION["ses_user_type"]) == 'A')
+        if(strtoupper($_SESSION["ses_user_type"]) == 'A' OR strtoupper($_SESSION["ses_user_type"]) == 'P')
         {
             echo "<div id='left_slide'>";
             require_once("include/menu_admin.php");

@@ -23,16 +23,23 @@ try
     $strSql .= "'" . $_POST["add_emp_id_no"] . "',";
     $strSql .= "'" . (string)((int)substr($_POST["mydate1"],6,4)-543)."/".substr($_POST["mydate1"],3,2)."/".substr($_POST["mydate1"],0,2) . "',";
     $strSql .= "'" . $_POST["add_emp_mobile_no"] . "',";
-    $strSql .= "'" . "images/" . $_FILES["add_emp_picture"]["name"] . "',";
+    $strSql .= "'" . $_POST["add_emp_emergency_mobile_no"] . "',";
+    $strSql .= "'" . $_POST["add_emp_religion"] . "',";
+    $strSql .= "'" . $_POST["add_emp_current_status"] . "',";
+    $strSql .= "'" . $_POST["add_emp_blood_type"] . "',";
+    $strSql .= "'" . 'images/' . $_FILES["add_emp_picture"]["name"] . "',";
 
     $strSql .= "'" . $_POST["add_job_business"] . "',";
     $strSql .= "'" . $_POST["add_job_department"] . "',";
+    $strSql .= "'" . $_POST["add_job_section"] . "',";
+    $strSql .= "'" . $_POST["add_job_task"] . "',";
     $strSql .= "'" . $_POST["add_job_location"] . "',";
     $strSql .= "'" . $_POST["add_job_grade"] . "',";
     $strSql .= "'" . $_POST["add_job_position"] . "',";
     $strSql .= "'" . (string)((int)substr($_POST["mydate2"],6,4)-543)."/".substr($_POST["mydate2"],3,2)."/".substr($_POST["mydate2"],0,2) . "',";
 
     $strSql .= "'" . $_POST["add_addr_no"] . "',";
+    $strSql .= "'" . $_POST["add_addr_moo"] . "',";
     $strSql .= "'" . $_POST["add_addr_road"] . "',";
     $strSql .= "'" . $_POST["add_addr_area"] . "',";
     $strSql .= "'" . $_POST["add_addr_district"] . "',";
@@ -45,7 +52,15 @@ try
     $strSql .= "'" . $_POST["add_edu_faculty1"] . "',";
     $strSql .= "'" . $_POST["add_edu_major1"] . "',";
     $strSql .= "'" . $_POST["add_edu_grade1"] . "',";
-    $strSql .= "'" . $_POST["add_edu_graduated_year1"] . "',";
+    if($_POST["add_edu_graduated_year1"] == '')
+    {
+        $strSql .= "NULL,";
+    }
+    else
+    {
+        $strSql .= "'" . $_POST["add_edu_graduated_year1"] . "',";
+    }
+    
 
     $strSql .= "'" . $_POST["add_edu_level2"] . "',";
     $strSql .= "'" . $_POST["add_edu_detail2"] . "',";
@@ -53,7 +68,14 @@ try
     $strSql .= "'" . $_POST["add_edu_faculty2"] . "',";
     $strSql .= "'" . $_POST["add_edu_major2"] . "',";
     $strSql .= "'" . $_POST["add_edu_grade2"] . "',";
-    $strSql .= "'" . $_POST["add_edu_graduated_year2"] . "')";    
+    if($_POST["add_edu_graduated_year2"] == '')
+    {
+        $strSql .= "NULL)";
+    }
+    else
+    {
+        $strSql .= "'" . $_POST["add_edu_graduated_year2"] . "')";
+    }
     //echo $strSql . "<br>";
         
     $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
@@ -65,14 +87,14 @@ try
     {
         echo "<script> 
                 alert('Add data complete!'); 
-                window.location.href='admin_p11.php'; 
-            </script>";   
+                window.location.href='admin_p11_criteria.php'; 
+            </script>";
     }
     else
     {        
         echo "<script> 
                 alert('Warning! Cannot add data!'); 
-                window.location.href='admin_p11.php'; 
+                window.location.href='admin_p11_criteria.php'; 
             </script>";            
     }
     
@@ -81,7 +103,7 @@ catch(PDOException $e)
 {
     echo "<script> 
             alert('Error!" . substr($e->getMessage(),0,105) . " '); 
-            window.location.href='admin_p11.php'; 
+            window.location.href='admin_p11_criteria.php'; 
         </script>";
 }
 

@@ -28,7 +28,7 @@
     $strSql .= "FROM MAS_Performance P " ;
     $strSql .= "JOIN Emp_Main E ON E.emp_code = P.emp_Code ";
     $strSql .= "WHERE " . substr($condition, 2, strlen($condition)-2);    
-    $strSql .= "ORDER BY P.performance_year, P.emp_code" ;
+    $strSql .= "ORDER BY P.performance_year DESC, P.emp_code" ;
     //echo $strSql . "<br>";
 
     $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  

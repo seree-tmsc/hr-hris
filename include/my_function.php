@@ -18,10 +18,13 @@ function send_notification($message, $token)
         return $result;
     }
 // Notify by Seree
-$myToken = 'GGjBQYhFzjoYASqoNeeW8OLplYJXpw61mNo2ve7GJqY';
+//$myToken = 'GGjBQYhFzjoYASqoNeeW8OLplYJXpw61mNo2ve7GJqY';
 
 // Testing LINE Notify
 //$myToken = '8p3FR6ybmkaijsXbqPIjhXa4tKD3R9sWm4VNMThQbfc';
+
+// HRIS LINE NOTIFY
+$myToken = 'a4SU2sVQLCeRARZRvAPHeBZl3LiEMkTeSn8eCx2Mkfj';
 
 
 

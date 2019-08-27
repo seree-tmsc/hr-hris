@@ -53,12 +53,12 @@
     <!-- End Body page -->
 
     <!--Test Begin left slide menu -->
-    <?php
-        if(strtoupper($_SESSION["ses_user_type"]) == 'A')
+    <?php        
+        if(strtoupper($_SESSION["ses_user_type"]) == 'A' OR strtoupper($_SESSION["ses_user_type"]) == 'P')
         {
             echo "<div id='left_slide'>";
             require_once("include/menu_admin.php");
-            echo "</div>";            
+            echo "</div>";
         }
     ?>
     <!--/Test End left slide menu -->

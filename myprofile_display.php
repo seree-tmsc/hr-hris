@@ -29,8 +29,8 @@
         $emp_id_no = $ds['emp_id_no'];   
 
         $BirthDate = new DateTime($ds['emp_birth_date']);
-        $tmpDate = $BirthDate->format('Y')+543 . "/".$BirthDate->format('m') . "/". $BirthDate->format('d');
-        $BirthDate = new DateTime($tmpDate);
+        //$tmpDate = $BirthDate->format('Y')+543 . "/".$BirthDate->format('m') . "/". $BirthDate->format('d');
+        //$BirthDate = new DateTime($tmpDate);
         $emp_birth_date = $BirthDate;
         
         $emp_mobile_no = $ds['emp_mobile_no'];
@@ -42,8 +42,8 @@
         $job_position = $ds['job_position'];
 
         $WorkingDate = new DateTime($ds['job_working_date']);
-        $tmpDate = $WorkingDate->format('Y')+543 . "/".$WorkingDate->format('m') . "/". $WorkingDate->format('d');
-        $WorkingDate = new DateTime($tmpDate);
+        //$tmpDate = $WorkingDate->format('Y')+543 . "/".$WorkingDate->format('m') . "/". $WorkingDate->format('d');
+        //$WorkingDate = new DateTime($tmpDate);
         $job_working_date = $WorkingDate;
 
         $addr_no = $ds['addr_no'];
@@ -66,7 +66,7 @@
         $edu_institute2 = $ds['edu_institute2'];
         $edu_faculty2 = $ds['edu_faculty2'];
         $edu_major2 = $ds['edu_major2'];
-        $edu_grade2 = $ds['edu_grade2'];
+        $edu_grade2 = $ds['edu_grade2'];        
         $edu_graduated_year2 = $ds['edu_graduated_year2'];
     }
     else
@@ -78,9 +78,9 @@
     }
 ?>
 
-<div class="panel panel-red">
+<div class="panel panel-tmscblue">
     <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-user-circle fa-fw"></i> My Profile</h3>                    
+        <h3 class="panel-title"><i class="fa fa-user-circle fa-fw"></i> My Profile</h3>       
     </div>
 
     <div class="panel-body text-center">
@@ -130,11 +130,11 @@
         </div>
         
         <div class="form-group">
-            <!--
+            
             <div class="col-lg-2">
                 <label>&nbsp;</label>
             </div>
-            -->
+            
             <div class="col-lg-2" align="left">
                 <label>ชื่อเล่น</label>
                 <input type="text" readonly class="form-control" value="<?php echo $emp_nname; ?>" >
@@ -152,6 +152,27 @@
                 <input type="text" readonly class="form-control" value="<?php echo $emp_mobile_no; ?>" >
             </div>            
         </div>
+        <div class="form-group">
+            <div class="col-lg-2">
+                <label>&nbsp;</label>
+            </div>
+            <div class="col-md-2" align="left">
+                <label>ศาสนา</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['emp_religion']; ?>" >
+            </div>
+            <div class="col-lg-2" align="left">
+                <label>กรุ๊ปเลือด</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['emp_blood_type']; ?>" >
+            </div>
+            <div class="col-md-3" align="left">
+                <label>สถานภาพ</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['emp_current_status']; ?>" >
+            </div>
+            <div class="col-md-3" align="left">
+                <label>โทรศัพท์ติดต่อกรณีฉุกเฉิน</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['emp_emergency_mobile_no']; ?>" >
+            </div>
+        </div>
         
         <!-- Header2 -->
         <div class="form-group">
@@ -164,15 +185,25 @@
 
         <div class="form-group">
             <div class="col-lg-2" align="left">
-                <label>SBU</label>
+                <label>Business</label>
                 <input type="text" readonly class="form-control" value="<?php echo $job_business; ?>" >                                   
             </div>
             <div class="col-lg-2" align="left">
                 <label>แผนก</label>
                 <input type="text" readonly class="form-control" value="<?php echo $job_department; ?>" >                                   
             </div>
+
             <div class="col-lg-2" align="left">
-                <label>สังกัด</label>
+                <label>Section</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['job_section']; ?>" >
+            </div>
+
+            <div class="col-lg-2" align="left">
+                <label>Task</label>
+                <input type="text" readonly class="form-control" value="<?php echo $ds['job_task']; ?>" >                                   
+            </div>
+            <div class="col-lg-2" align="left">
+                <label>สถานที่</label>
                 <input type="text" readonly class="form-control" value="<?php echo $job_location; ?>" >
             </div>
             <div class="col-lg-2" align="left">
@@ -236,11 +267,11 @@
         </div>
 
         <div class="form-group">
-            <div class="col-lg-2" align="left">  
+            <div class="col-lg-4" align="left">  
                 <label>ระดับการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_level1;?>">
             </div>
-            <div class="col-lg-4" align="left">
+            <div class="col-lg-2" align="left">
                 <label>วุฒิการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_detail1;?>">
             </div>
@@ -260,8 +291,8 @@
                 <input type="text" readonly class="form-control" value="<?php echo $edu_major1;?>">
             </div>
             <div class="col-lg-2" align="left">
-                <label>ปีที่จบ</label>
-                <input type="text" readonly class="form-control" value="<?php echo $edu_graduated_year1;?>">
+                <label>ปีที่จบการศึกษา</label>
+                <input type="text" readonly class="form-control" value="<?php if(is_null($edu_graduated_year1)) {echo '-';} else {echo date('Y', strtotime($edu_graduated_year1));}?>">
             </div>
             <div class="col-lg-2" align="left">
                 <label>เกรด</label>
@@ -286,11 +317,11 @@
         </div>
         
         <div class="form-group">
-            <div class="col-lg-2" align="left">  
+            <div class="col-lg-4" align="left">  
                 <label>ระดับการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_level2;?>">
             </div>
-            <div class="col-lg-4" align="left">
+            <div class="col-lg-2" align="left">
                 <label>วุฒิการศึกษา</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_detail2;?>">
             </div>
@@ -310,8 +341,8 @@
                 <input type="text" readonly class="form-control" value="<?php echo $edu_major2;?>">
             </div>
             <div class="col-lg-2" align="left">
-                <label>ปีที่จบ</label>
-                <input type="text" readonly class="form-control" value="<?php echo $edu_graduated_year2;?>">
+                <label>ปีที่จบการศึกษา</label>
+                <input type="text" readonly class="form-control" value="<?php if(is_null($edu_graduated_year2)) {echo '-';} else {echo date('Y', strtotime($edu_graduated_year2));}?>">
             </div>
             <div class="col-lg-2" align="left">
                 <label>เกรด</label>

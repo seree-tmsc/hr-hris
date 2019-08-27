@@ -5,12 +5,12 @@
 
 <div class="list-group">
     <a href="#admin_myprofile_menu" class="list-group-item" data-toggle="collapse">
-        1. User Profile
+        1. User
         <i class="fa fa-user-circle fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="admin_myprofile_menu">
-        <a href="admin_p11.php" class="list-group-item">1.1 User Profile</a>
-        <a href="admin_p12.php" class="list-group-item">1.2 User Management</a>
+        <a href="admin_p11_criteria.php" class="list-group-item">1.1 Employee Data List</a>
+        <a href="admin_p12.php" class="list-group-item">1.2 Maintain User-ID</a>
     </div>
     
     <a href="#admin_hrinf_menu" class="list-group-item" data-toggle="collapse">
@@ -18,10 +18,25 @@
         <i class="fa fa-folder-open fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="admin_hrinf_menu">
-        <a href="admin_p21.php" class="list-group-item">2.1 Perfomance list</a>
-        <a href="admin_p22.php" class="list-group-item">2.2 Promotion list</a>
+        <a href="admin_p21_criteria.php" class="list-group-item">2.1 Perfomance Data List</a>
+        <a href="admin_p22_criteria.php" class="list-group-item">2.2 Promotion Data List</a>
     </div>
 
+    <a href="#admin_ed_menu" class="list-group-item" data-toggle="collapse">
+        3. Employee Development
+        <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
+    </a>
+    <div class="list-group collapse" id="admin_ed_menu">        
+        <a href="admin_p31_criteria_v1.php" class="list-group-item">3.1 Training Roadmap</a>       
+        <a href="admin_p32_criteria.php" class="list-group-item">3.2 Training Record</a>
+
+        <!-- <a href="admin_p51_v2.php" class="list-group-item">3.1 Training Roadmap</a>       
+        <a href="admin_p51.php" class="list-group-item">3.2 Training Record</a> -->
+
+    </div>
+
+    
+    <!--
     <a href="#admin_jd_menu" class="list-group-item" data-toggle="collapse">
         3. Job Description
         <i class="fa fa-address-card fa-lg btn pull-right"></i>
@@ -43,18 +58,18 @@
         <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="admin_ed_menu">        
-        <a href="admin_53.php" class="list-group-item">5.1 Training Roadmap</a>
+        <a href="admin_p51_v1.php" class="list-group-item">5.1 Training Roadmap</a>
         <a href="#" class="list-group-item">5.2 IDP</a>
-        <a href="admin_p53.php" class="list-group-item">5.3 Training Record</a>
+        <a href="admin_p51.php" class="list-group-item">5.3 Training Record</a>
         <a href="#" class="list-group-item">5.4 e-Learning</a>
     </div>
 
     <a href="#admin_roadmap_menu" class="list-group-item" data-toggle="collapse">
         6. -
-        <!--<i class="fa fa-line-chart fa-lg btn pull-right"></i>-->
+        <i class="fa fa-line-chart fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="admin_roadmap_menu">
-        <!--<a href="#" class="list-group-item">6.1 Roadmap</a>-->
+        <a href="#" class="list-group-item">6.1 Roadmap</a>
     </div>
 
     <a href="#admin_pms_menu" class="list-group-item" data-toggle="collapse">
@@ -87,5 +102,13 @@
     </a>
     <div class="list-group collapse" id="admin_tools_menu">
         <a href="admin_p101.php" class="list-group-item">10.1 Import Data from Excel into DB</a>
+        <a href="admin_pMSet.php" class="list-group-item">10.2 DATA TRAINING SET MASTER</a>
+        <a href="admin_pMSet_D.php" class="list-group-item">10.3 DATA TRAINING SET DETAIL</a>
+        <a href="admin_pMRoadmap.php" class="list-group-item">10.4 DATA TRAINING ROADMAP</a>
+        <a href="admin_pMORG.php" class="list-group-item">10.5 DATA TRAINING ORG</a>
+        <a href="admin_pRoadmapGen.php" class="list-group-item">10.5 TRAINING ROADMAP GENERATE BY DEPT</a>
+        <a href="admin_pRoadmapGen_User.php" class="list-group-item">10.6 TRAINING ROADMAP GENERATE BY USER</a>
+        <a href="admin_pMRecord.php" class="list-group-item">10.7 Import Data From Excel into DB Training Record</a>
     </div>
+    -->
 </div>

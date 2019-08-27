@@ -1,0 +1,10 @@
+﻿emp_code,emp_fname,Training_set,Module,Code_Course,Code_Name,Training_Status,Biz,Dep,Sec,Task,Position,site,status,start_date,end_date,training_day,institute,location,type_course,year,cost
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-ACH-001,Achievement Orientation,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,5,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-AT-002,Analytical Thinking,0,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,2,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-CL-003,Change Leadership,0,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,3,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-CSO-004,Customer Service Orientation,0,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,4,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-INT-005,Initiatieve,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,1,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Core - Competency Skill,CC-TW-006,Teamwork and cooperation ,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,2,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Functional - Competency Skill,FC-COQ-002,Concern for Ordeer and Quality,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,5,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Functional - Competency Skill,FC-CT-001,Conceptual Thinking,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,6,สวทช,สวทช,EXT,2018,20000
+OC-011,RUNGNAPA,Training Set 115,Functional - Competency Skill,FC-INF-004,Information Seeking,1,BIZ,IT,ERP,ERP,EXE,SL,ACTIVE,10/18/2018,10/19/2018,1,สวทช,สวทช,EXT,2018,20000

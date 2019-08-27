@@ -24,9 +24,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-inline">
-                    Search : 
-                    <!--<input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by year.." title="Type year">-->
                     <!--
+                    Search : 
+                    <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by year.." title="Type year">                    
                     <div class="pull-right">
                         <button class="btn btn-success" data-toggle="modal" data-target="#export_modal">
                             <span class="fa fa-cloud-download"></span> 

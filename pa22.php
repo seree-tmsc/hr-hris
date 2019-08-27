@@ -29,7 +29,7 @@
                     <div class='panel-body'>
                         <div class='form-group'>
                             <div class='col-lg-3' align='center'>
-                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> height='196' width='128'>
+                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> width='128'>
                             </div>
                             <div class='col-lg-2' align='left'>
                                 <label>รหัสพนักงาน</label>

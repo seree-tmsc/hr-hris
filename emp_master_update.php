@@ -42,7 +42,8 @@
             $strSql .= "emp_id_no='" . $_POST['update_emp_id_no'] . "' ,";            
             $strSql .= "emp_birth_date='" . (string)((int)substr($_POST["update_emp_birth_date"],6,4)-543)."/".substr($_POST["update_emp_birth_date"],3,2)."/".substr($_POST["update_emp_birth_date"],0,2) . "',";            
             $strSql .= "emp_mobile_no='" . $_POST['update_emp_mobile_no'] . "' ,";
-            
+            $strSql .= "emp_emergency_mobile_no='" . $_POST['update_emp_emergency_mobile_no'] . "' ,";
+
             $strSql .= "job_business='" . $_POST['update_job_business'] . "' ,";
             $strSql .= "job_department='" . $_POST['update_job_department'] . "' ,";
             $strSql .= "job_location='" . $_POST['update_job_location'] . "' ,";
@@ -85,14 +86,14 @@
             {
                 echo "<script>
                         alert('Update data complete!');
-                        window.location.href='admin_p11.php';
+                        window.location.href='admin_p11_criteria.php';
                     </script>";
             }
             else
             {
                 echo "<script> 
                         alert('Warning! Cannot update data!'); 
-                        window.location.href='admin_p11.php'; 
+                        window.location.href='admin_p11_criteria.php'; 
                     </script>";
             }
             

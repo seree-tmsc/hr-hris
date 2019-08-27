@@ -1,4 +1,13 @@
-<?php    
+<?php
+    if( $_POST['selDept'] == 'ALL')
+    {
+        echo "Department : " . $_POST['selDept'] . "<br>";
+    }
+    else
+    {
+        echo "Department : " . $_POST['selDept'] . " / Position : " . $_POST['selPos'] . "<br>";
+    }
+    
     try
     {
 ?>              
@@ -18,12 +27,30 @@
                     </tr>
                 </thead>
                 <tbody>
+
 <?php
         include('include/db_Conn.php');
 
-        $strSql = "SELECT * ";
-        $strSql .= "FROM Emp_Main ";        
-        $strSql .= "ORDER BY emp_code ";
+        if($_POST['selDept'] == 'ALL')
+        {
+            $strSql = "SELECT * ";
+            $strSql .= "FROM Emp_Main ";
+            $strSql .= "ORDER BY job_department, emp_code ";
+        }
+        else
+        {
+            $strSql = "SELECT * ";
+            $strSql .= "FROM Emp_Main ";
+            $strSql .= "WHERE job_department='" . $_POST['selDept'] . "' ";
+            if($_POST['selPos'] != 'ALL')
+            {
+                $strSql .= "AND job_position='" . $_POST['selPos'] . "' ";
+            }
+            else
+            {
+                $strSql .= "ORDER BY emp_code ";
+            }
+        }
 
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
         $statement->execute();  
@@ -38,10 +65,17 @@
                 $BirthDate = new DateTime($tmpBirthDate);
 
                 $WorkingDate = new DateTime($ds['job_working_date']);
-                $tmpBirthDate = $WorkingDate->format('Y')+543 . "/".$WorkingDate->format('m') . "/". $WorkingDate->format('d');
-                $WorkingDate = new DateTime($tmpBirthDate);
+                $tmpWorkingDate = $WorkingDate->format('Y')+543 . "/".$WorkingDate->format('m') . "/". $WorkingDate->format('d');
+                $WorkingDate = new DateTime($tmpWorkingDate);
+
+                /*
+                $EduYear = date('Y', strtotime($ds['edu_graduated_year1']));
+                $EduYear = $EduYear+534;
+                */
                 //echo $BirthDate->format('d-m-Y') . "<br>";
-?> 
+                
+?>
+
                 <tr>
                     <td class='text-center'><?php echo $ds['emp_code']; ?></td>
                     <td><?php echo $ds['emp_ttitle']; ?></td>
@@ -49,9 +83,9 @@
                     <td><?php echo $ds['emp_tlname']; ?></td>
                     <td><?php echo $ds['emp_etitle']; ?></td>
                     <td><?php echo $ds['emp_efname']; ?></td>
-                    <td><?php echo $ds['emp_elname']; ?></td>                    
+                    <td><?php echo $ds['emp_elname']; ?></td>
                     <td align='center'>
-                        <img src='<?php echo $ds['emp_picture'] . '?v=' . date("YmdHis"); ?>' height='72' width='48'>                        
+                        <img src='<?php echo $ds['emp_picture'] . '?v=' . date("YmdHis"); ?>' height='72' width='48'>
                     </td>
                     <td class='text-center'>                        
                         <a href='#' onclick="javascript:showModalUpdate_emp_master(                            
@@ -66,14 +100,21 @@
                             '<?php echo $ds['emp_id_no']; ?>',
                             '<?php echo $BirthDate->format('d/m/Y'); ?>',
                             '<?php echo $ds['emp_mobile_no']; ?>',
+                            '<?php echo $ds['emp_emergency_mobile_no']; ?>',
+                            '<?php echo $ds['emp_religion']; ?>',
+                            '<?php echo $ds['emp_current_status']; ?>',
+                            '<?php echo $ds['emp_blood_type']; ?>',
                             '<?php echo $ds['emp_picture']; ?>',
                             '<?php echo $ds['job_business']; ?>',
                             '<?php echo $ds['job_department']; ?>',
-                            '<?php echo $ds['job_location']; ?>',
-                            '<?php echo $ds['job_grade']; ?>',
+                            '<?php echo $ds['job_section']; ?>',
+                            '<?php echo $ds['job_task']; ?>',
+                            '<?php echo trim($ds['job_location']); ?>',
+                            '<?php echo trim($ds['job_grade']); ?>',
                             '<?php echo $ds['job_position']; ?>',
                             '<?php echo $WorkingDate->format('d/m/Y'); ?>',
                             '<?php echo $ds['addr_no']; ?>',
+                            '<?php echo $ds['addr_moo']; ?>',
                             '<?php echo $ds['addr_road']; ?>',
                             '<?php echo $ds['addr_area']; ?>',
                             '<?php echo $ds['addr_district']; ?>',

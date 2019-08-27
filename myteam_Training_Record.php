@@ -1,4 +1,4 @@
-<h3 align="center"><font color="red">My Team TRAINING RECORD Data</font></h3>
+<h3 align="center"><font color="green">My Team TRAINING RECORD Data</font></h5>
 
 <div class="row">
     <!--
@@ -54,8 +54,8 @@
             //echo strpos($tmpAllmyteam,';') . "<br>";
             //echo "myteam = " . $tmpmyteam . "<br>";
 
-            $business_condition = "E.job_business = '" . substr($tmpmyteam, 1, strpos($tmpmyteam,',')-1) . "' ";
-            $department_condition = "E.job_department = '" . substr($tmpmyteam, strpos($tmpmyteam,',')+1, strpos($tmpmyteam,']') - strpos($tmpmyteam,',') - 1) . "' ";
+            $business_condition = "Biz = '" . substr($tmpmyteam, 1, strpos($tmpmyteam,',')-1) . "' ";
+            $department_condition = "Dep = '" . substr($tmpmyteam, strpos($tmpmyteam,',')+1, strpos($tmpmyteam,']') - strpos($tmpmyteam,',') - 1) . "' ";
             $condition .= "OR (" . $business_condition . " AND " . $department_condition . ") ";
             //echo "codition = " . $condition . "<br>";
 
@@ -88,10 +88,10 @@
 <?php
                 
                 include_once('include/db_Conn.php');   
-                $strSql = "SELECT *, E.emp_code as 'Emp_Code' " ;
-                $strSql .= "FROM Emp_Main E INNER JOIN MAS_Training_Record R ON E.Emp_Code = R.Emp_ID INNER JOIN MAS_Training_Course ON R.Code_Course = MAS_Training_Course.Course_Code  " ;
-                $strSql .= "WHERE " . substr($condition, 2, strlen($condition)-2);    
-                $strSql .= "ORDER BY R.Emp_ID" ;    
+                $strSql = "SELECT emp_code,emp_fname,Training_set,Module,Code_Course,Code_Name,Training_Status,status,start_date,end_date,training_day,institute,location,type_course,year,cost " ;
+                $strSql .= "FROM MAS_TRAINING_ROADMAP_GENERATE " ;
+                $strSql .= "WHERE " . substr($condition, 2, strlen($condition)-2);
+                $strSql .= "ORDER BY emp_code " ;
                 //echo $strSql . "<br>";
                 
                 $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
@@ -107,19 +107,22 @@
                     while ($ds = $statement->fetch(PDO::FETCH_NAMED))
                     {
                         //echo $ds["emp_code"] . "<br>";
-                        $rowArray = array($ds["Emp_ID"], 
-                                        $ds["Name_Surname"], 
-                                        $ds["Module_Name"], 
+                        $rowArray = array($ds["emp_code"], 
+                                        $ds["emp_fname"], 
+                                        $ds["Training_set"], 
+                                        $ds["Module"], 
                                         $ds["Code_Course"], 
-                                        $ds["Course_Detail"], 
-                                        $ds["Institute"], 
-                                        $ds["Location"],
-                                        $ds["Type_Course"],
-                                        $ds["Start_Date"],
-                                        $ds["End_Date"],
-                                        $ds["Training_Day"],
-                                        $ds["Year"],
-                                        $ds["Cost"]);
+                                        $ds["Code_Name"], 
+                                        $ds["Training_Status"],
+                                        $ds["status"],
+                                        $ds["start_date"],
+                                        $ds["end_date"],
+                                        $ds["training_day"],
+                                        $ds["institute"],
+                                        $ds["location"],
+                                        $ds["type_course"],
+                                        $ds["year"],
+                                        $ds["cost"]);
                         array_push($dataArray, $rowArray);
                     }
 

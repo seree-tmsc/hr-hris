@@ -9,6 +9,8 @@
     }
     else
     {
+        if(strtoupper($_SESSION["ses_user_type"]) == 'A')
+        {
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +45,7 @@
 
     <!--Test Begin left slide menu -->
     <?php
-        if(strtoupper($_SESSION["ses_user_type"]) == 'A')
+        if(strtoupper($_SESSION["ses_user_type"]) == 'A' OR strtoupper($_SESSION["ses_user_type"]) == 'P')
         {
             echo "<div id='left_slide'>";
             require_once("include/menu_admin.php");
@@ -61,5 +63,13 @@
 </html>
 
 <?php
+        }
+        else
+        {
+            echo "<script> 
+                    alert('ERROR MESSAGE...! You do not have authorization to acces this menu.'); 
+                    window.location.href='p11.php'; 
+                </script>";
+        }
     }
 ?>

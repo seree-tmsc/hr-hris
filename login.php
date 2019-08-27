@@ -35,7 +35,8 @@
                         $_SESSION["ses_emp_code"] = $result[0]["emp_code"];
                         
                         $client_ip = get_client_ip();
-                        $message = " Please be informed that USER-ID = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS from client no. ' . $client_ip;
+                        //$message = " Please be informed that USER-ID = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS from client no. ' . $client_ip;
+                        $message = " User = " . $result[0]["user_email"] . ' ' . ' is logging into HRIS from client no. ' . $client_ip;
                         $token = $myToken;
                         send_notification($message, $token);
                         

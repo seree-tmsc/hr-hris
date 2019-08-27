@@ -34,7 +34,7 @@
                     <div class='panel-body'>
                         <div class='form-group'>
                             <div class='col-lg-3' align='center'>
-                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> height='196' width='128'>
+                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> width='128'>
                             </div>
                             <div class='col-lg-2' align='left'>
                                 <label>รหัสพนักงาน</label>
@@ -72,12 +72,26 @@
                             </div>
                         </div>                        
                         <div class='form-group'>
+                            <!--
                             <div class='col-lg-2' align='left'>
                                 <label>&nbsp</label>                                
                             </div>
+                            -->                            
                             <div class='col-lg-2' align='left'>
                                 <label>วันเกิด</label>
                                 <input type="text" readonly class="form-control" value="<?php echo date('d/M/Y',strtotime($_GET['var11'])); ?>" >
+                            </div>
+                            <div class='col-lg-2' align='left'>
+                                <label>ศาสนา</label>
+                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var12']; ?>" >
+                            </div>
+                            <div class='col-lg-2' align='left'>
+                                <label>กรุีปเลือด</label>
+                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var13']; ?>" >
+                            </div>
+                            <div class='col-lg-2' align='left'>
+                                <label>สถานภาพ</label>
+                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var14']; ?>" >
                             </div>
                         </div>                        
                     </div>
@@ -94,7 +108,7 @@
                     <div class='panel-body'>
                         <div class='form-group'>
                             <div class='col-lg-2' align='left'>
-                                <label>BIZ</label>
+                                <label>Business</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var20']; ?>" >
                             </div>                            
                             <div class='col-lg-2' align='left'>
@@ -102,15 +116,19 @@
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var21']; ?>" >
                             </div>
                             <div class='col-lg-2' align='left'>
-                                <label>สังกัด</label>
+                                <label>Section</label>
+                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var26']; ?>" >
+                            </div>
+                            <div class='col-lg-1' align='left'>
+                                <label>สถานที่</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var22']; ?>" >
                             </div>
                             <div class='col-lg-2' align='left'>
                                 <label>ตำแหน่ง</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var23']; ?>" >
                             </div>
-                            <div class='col-lg-2' align='left'>
-                                <label>Job Grade</label>
+                            <div class='col-lg-1' align='left'>
+                                <label>JG</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var24']; ?>" >
                             </div>
                             <div class='col-lg-2' align='left'>
@@ -201,7 +219,8 @@
                             </div>
                             <div class='col-lg-1' align='left'>
                                 <label>ปีที่จบ</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var45']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php 
+                                if(empty($_GET['var45'])) {echo '-';} else {echo $_GET['var45'];} ?>" >                                
                             </div>
                         </div>
                     </div>
@@ -233,7 +252,8 @@
                         <div class='form-group'>
                             <div class='col-lg-5' align='left'>
                                 <label>สถาบัน</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var48']; ?>" >
+                                <!--<input type="text" readonly class="form-control" value="<?php //echo $_GET['var48']; ?>" >-->
+                                <input type="text" readonly class="form-control" value="-" >
                             </div>
                             <div class='col-lg-3' align='left'>
                                 <label>คณะ</label>
@@ -245,7 +265,8 @@
                             </div>
                             <div class='col-lg-1' align='left'>
                                 <label>ปีที่จบ</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var51']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php 
+                                if(empty($_GET['var51'])) {echo '-';} else {echo date('Y',strtotime($_GET['var51']));} ?>" >
                             </div>
                         </div>
                     </div>

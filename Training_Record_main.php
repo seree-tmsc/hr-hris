@@ -10,12 +10,12 @@
             Search : 
             <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by user names.." title="Type user name">
 
-            <div class="pull-left">
+            <!--<div class="pull-left">
                 <button class="btn btn-success" data-toggle="modal" data-target="#CriteriaModal">
                     <span class="glyphicon glyphicon-plus"></span> 
                     SELECT CRITERIA
                 </button>
-            </div>
+            </div> -->
 
             <div class="pull-right">
                 <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">

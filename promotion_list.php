@@ -22,10 +22,58 @@
 
         include('include/db_Conn.php');
 
-        $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
-        $strSql .= "FROM MAS_Promotion P ";
-        $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
-        $strSql .= "ORDER BY P.Emp_Code ";
+        switch($_POST['selDept'])
+        {
+            case "ALL":
+                echo "select dept=ALL";                
+
+                $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                $strSql .= "FROM MAS_Promotion P ";
+                $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
+                $strSql .= "ORDER BY P.Emp_Code ";
+                break;
+
+            default:
+                switch($_POST['selPos'])
+                {
+                    case "ALL":
+                        echo "select dept=" . $_POST['selDept'] ." / postion = ALL";
+
+                        $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                        $strSql .= "FROM MAS_Promotion P ";
+                        $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
+                        $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
+                        $strSql .= "ORDER BY P.Emp_Code ";
+                        break;
+
+                    default:
+                        switch($_POST['selEmp'])
+                        {
+                            case "ALL":
+                                echo "select dept=" . $_POST['selDept'] . " / postion = " . $_POST['selPos'] ." / employee = ALL";
+
+                                $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                                $strSql .= "FROM MAS_Promotion P ";
+                                $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
+                                $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
+                                $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "' ";
+                                $strSql .= "ORDER BY P.Emp_Code ";
+                                break;
+
+                            default:
+                                echo "select dept=" . $_POST['selDept'] . " / postion = " . $_POST['selPos'] ." / employee = " . $_POST['selEmp'];
+
+                                $strSql = "SELECT P.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                                $strSql .= "FROM MAS_Promotion P ";
+                                $strSql .= "JOIN Emp_Main E ON P.emp_code = E.emp_code ";
+                                $strSql .= "WHERE E.emp_code ='" .  $_POST['selEmp'] . "' ";
+                                $strSql .= "ORDER BY P.Emp_Code ";
+                                break;
+                        }
+                        break;
+                }
+                break;
+        }
 
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
         $statement->execute();  

@@ -1,0 +1,8 @@
+﻿Year,Period,Employee_Code,Thai_First_Name,Thai_Last_Name,Promote_From_Jg,Promote_From_Position,Promote_From_Dept,Promote_To_Jg,Promote_To_Position,Promote_To_Dept,Promote_Date
+2013,1,OC-011,รุ่งนภา,เทียนพิมาย,"10  ",Staff,IT,"11  ",Sr.Staff,IT
+2012,1,OC-006,ปริศนา,เชี่ยวสมุทร,,AM1,IT,"12  ",EXE,IT
+2012,1,OC-011,รุ่งนภา,เทียนพิมาย,,S3,IT,"10  ",Staff,IT
+2007,1,OC-006,ปริศนา,เชี่ยวสมุทร,,C3,IT,,AM1,IT
+2006,1,OC-011,รุ่งนภา,เทียนพิมาย,,,,,S3,IT
+2005,1,OC-006,ปริศนา,เชี่ยวสมุทร,,C2,IT,,C3,IT
+2003,1,OC-006,ปริศนา,เชี่ยวสมุทร,,,,,C2,IT

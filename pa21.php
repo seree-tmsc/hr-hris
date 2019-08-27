@@ -29,14 +29,14 @@
                     </div>
                     <div class='panel-body'>
                         <div class='form-group'>
-                            <div class='col-lg-3' align='center'>
-                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> height='196' width='128'>
+                            <div class='col-lg-2' align='center'>
+                                <img src= <?php echo "'" . $_GET['var2'] . '?v=' . date('YmdHis') . "'" ?> width='128'>
                             </div>
                             <div class='col-lg-2' align='left'>
                                 <label>รหัสพนักงาน</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var1']; ?>" >
                             </div>
-                            <div class='col-lg-1' align='left'>
+                            <div class='col-lg-2' align='left'>
                                 <label>คำนำหน้า</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var3']; ?>" >
                             </div>
@@ -54,7 +54,7 @@
                                 <label>ชื่อเล่น</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var9']; ?>" >
                             </div>
-                            <div class='col-lg-1' align='left'>
+                            <div class='col-lg-2' align='left'>
                                 <label>Title</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var6']; ?>" >
                             </div>
@@ -79,7 +79,7 @@
                                 <label>Job-Grade</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var11']; ?>" >
                             </div>
-                            <div class='col-lg-3' align='left'>
+                            <div class='col-lg-4' align='left'>
                                 <label>ตำแหน่ง</label>
                                 <input type="text" readonly class="form-control" value="<?php echo $_GET['var10']; ?>" >
                             </div>

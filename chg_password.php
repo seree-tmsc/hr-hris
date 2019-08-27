@@ -1,10 +1,10 @@
 <?php
-    include_once('chk_Session.php');
+    include_once('include\chk_Session.php');
     if (isset($_POST['btn_submit']))
     {        
         try
         {
-            require_once('db_Conn.php');
+            require_once('include\db_Conn.php');
             $conn = new PDO("sqlsrv:server=$srv; Database=$db", $usr, $pwd);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -21,12 +21,16 @@
             if ($nRecCount == 1)
             {
                 $ds = $statement->fetch(PDO::FETCH_NAMED);
+
+                //echo trim($ds['emp_password']) . "<br>";
+                //echo trim($_POST['param_curpwd']) . "<br>";
+                                
                 if (trim($ds['emp_password']) == trim($_POST['param_curpwd']))
                 {
                     if ( trim($_POST['param_newpwd']) == trim($_POST['param_confnewpwd']) )
                     {
                         $strSql = "UPDATE MAS_Users_ID SET ";
-                        $strSql .= "user_pwd=cast('" . $_POST['param_newpwd'] . "' as binary) ";                        
+                        $strSql .= "user_pwd=cast('" . $_POST['param_newpwd'] . "' as binary) "; 
                         $strSql .= "WHERE user_email='" . $user_email . "' ";
                         //echo $strSql."<br>";
                         
@@ -62,8 +66,7 @@
                             alert('Error... Current Password not correct!');
                             window.location.href='p11.php';
                         </script>";
-                }
-                
+                }                
             }
             else
             {
