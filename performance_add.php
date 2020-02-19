@@ -38,14 +38,14 @@ try
     {
         echo "<script> 
                 alert('Add data complete!'); 
-                window.location.href='admin_p21.php'; 
+                window.location.href='admin_p21_criteria.php'; 
             </script>";   
     }
     else
     {        
         echo "<script> 
                 alert('Warning! Cannot add data!'); 
-                window.location.href='admin_p21.php'; 
+                window.location.href='admin_p21_criteria.php'; 
             </script>";            
     }
 }
@@ -53,7 +53,7 @@ catch(PDOException $e)
 {
     echo "<script> 
             alert('Error!" . substr($e->getMessage(),0,105) . " '); 
-            window.location.href='admin_p21.php'; 
+            window.location.href='admin_p21_criteria.php'; 
         </script>";
 }
 

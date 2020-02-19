@@ -8,7 +8,7 @@
     $strSql = "SELECT * " ;
     $strSql .= "FROM MAS_Performance " ;
     $strSql .= "WHERE emp_code='". $param_emp_code . "' ";
-    $strSql .= "ORDER BY performance_year ";
+    $strSql .= "ORDER BY performance_year DESC";
     //echo $strSql . "<br>";
     
     $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
@@ -17,6 +17,8 @@
     //echo "Record Count = " . $nRecCount ."<br>";
 
     echo "<h3 align='center'><font color='red'>Performance History Data</font></h3>";
+    echo "<hr>";
+    
     if ($nRecCount >0)
     {
 ?>                

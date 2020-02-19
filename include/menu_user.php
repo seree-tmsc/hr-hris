@@ -94,8 +94,8 @@
         <i class="fa fa-graduation-cap fa-lg btn pull-right"></i>
     </a>
     <div class="list-group collapse" id="ed_menu">
-        <a href="p51.php" class="list-group-item">5.1 Training Roadmap</a>          
-        <a href="p53.php" class="list-group-item">5.3 Training Record</a>
+        <a href="p51.php" class="list-group-item">3.1 Training Roadmap</a>          
+        <a href="p53.php" class="list-group-item">3.2 Training Record</a>
     </div>
 
     <a href="#myteam_menu" class="list-group-item" data-toggle="collapse">

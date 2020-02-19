@@ -64,8 +64,9 @@
             $strSql .= "edu_faculty1='" . $_POST['update_edu_faculty1'] . "' ,";
             $strSql .= "edu_major1='" . $_POST['update_edu_major1'] . "' ,";
             $strSql .= "edu_grade1='" . $_POST['update_edu_grade1'] . "' ,";
-            $strSql .= "edu_graduated_year1='" . $_POST['update_edu_graduated_year1'] . "', ";
+            $strSql .= "edu_graduated_year1='" . $_POST['update_edu_graduated_year1'] . "' ";
 
+            /*
             $strSql .= "edu_level2='" . $_POST['update_edu_level2'] . "' ,";
             $strSql .= "edu_detail2='" . $_POST['update_edu_detail2'] . "' ,";
             $strSql .= "edu_institute2='" . $_POST['update_edu_institute2'] . "' ,";
@@ -73,6 +74,7 @@
             $strSql .= "edu_major2='" . $_POST['update_edu_major2'] . "' ,";
             $strSql .= "edu_grade2='" . $_POST['update_edu_grade2'] . "' ,";
             $strSql .= "edu_graduated_year2='" . $_POST['update_edu_graduated_year2'] . "' ";
+            */
 
             $strSql .= "WHERE emp_code='" . $_POST['paramupdate_emp_code'] . "' ";
             //echo $strSql."<br>";

@@ -37,7 +37,7 @@
                 $strSql .= "FROM MAS_TRAINING_RECORD_NEW T ";
                 $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
                 $strSql .= "ORDER BY T.Emp_Code ";
-                //echo $strSql . "<br>";
+                echo $strSql . "<br>";
                 break;
 
             default:
@@ -54,6 +54,7 @@
                         //echo $strSql . "<br>";
                         break;
 
+
                     default:
                         switch($_POST['selEmp'])
                         {
@@ -65,22 +66,72 @@
                                 $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
                                 $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
                                 $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "' ";
+                                
+                                //$strSql .= "AND T.Module ='" .  $_POST['selModule'] . "' ";
+                                //$strSql .= "AND T.Code_Course ='" .  $_POST['selCourse'] . "' ";
                                 $strSql .= "ORDER BY T.Emp_Code ";
                                 //echo $strSql . "<br>";
                                 break;
-
+                        
                             default:
                                 echo "select dept=" . $_POST['selDept'] . " / postion = " . $_POST['selPos'] ." / employee = " . $_POST['selEmp'];
 
                                 $strSql = "SELECT T.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
                                 $strSql .= "FROM MAS_TRAINING_RECORD_NEW T ";
                                 $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
-                                $strSql .= "WHERE E.emp_code ='" .  $_POST['selEmp'] . "' ";
+
+                                $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
+                                $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "' ";
+                                $strSql .= "AND E.emp_code ='" .  $_POST['selEmp'] . "' ";
+                                //$strSql .= "AND T.Module ='" .  $_POST['selModule'] . "' ";
+                                //$strSql .= "AND T.Code_Course ='" .  $_POST['selCourse'] . "' ";
+                                
                                 $strSql .= "ORDER BY T.Emp_Code ";
                                 //echo $strSql . "<br>";
                                 break;
+
                         }
                         break;
+                    default:
+
+                    /*test Module*/
+                    switch($_POST['selModule'])
+                        {
+                        case "ALL":
+                            echo "select dept=" . $_POST['selDept'] . " / postion = " . $_POST['selPos'] ." / employee = " . $_POST['selEmp'] ." / Module= " . $_POST['SelModule'] . " ";
+
+                            $strSql = "SELECT T.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                            $strSql .= "FROM MAS_TRAINING_RECORD_NEW T ";
+                            $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
+                            $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
+                            $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "' ";
+                            $strSql .= "AND E.emp_code = '" . $_POST['selEmp'] . "' ";
+                            //$strSql .= "AND T.Module ='" .  $_POST['selModule'] . "' ";
+                            //$strSql .= "AND T.Code_Course ='" .  $_POST['selCourse'] . "' ";
+                            $strSql .= "ORDER BY T.Emp_Code ";
+                            echo $strSql . "<br>";
+                        break;
+
+                        default:
+                        //echo "select dept=" . $_POST['selDept'] . " / postion = " . $_POST['selPos'] ." / employee = " . $_POST['selEmp'] ." / Module= " . $_POST['SelModule'] . " ";
+
+                            $strSql = "SELECT T.*, E.emp_tfname as 'emp_tfname', E.emp_tlname as 'emp_tlname'";
+                            $strSql .= "FROM MAS_TRAINING_RECORD_NEW T ";
+                            $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
+                            $strSql .= "WHERE E.job_department ='" .  $_POST['selDept'] . "' ";
+                            $strSql .= "AND E.emp_code ='" .  $_POST['selEmp'] . "' ";
+                            $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "' ";
+                            $strSql .= "AND T.Module ='" .  $_POST['selModule'] . "' ";
+                            //$strSql .= "AND T.Code_Course ='" .  $_POST['selCourse'] . "' ";
+        
+                            $strSql .= "ORDER BY T.Emp_Code ";
+                            echo $strSql . "<br>";
+                        break;
+                        }
+                        break; 
+                    /*test*/
+
+
                 }
                 break;
         }

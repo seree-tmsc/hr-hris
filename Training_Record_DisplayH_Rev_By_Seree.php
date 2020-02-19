@@ -153,8 +153,8 @@
                         array_push($dataArray, $rowArray);
                     }
 
-                    $fileName = "tmpTrainingRoadmap.csv";
-                    $fp = fopen('tmpTrainingRoadmap.csv', 'w');
+                    $fileName = "tmpTrainingRecord_User.csv";
+                    $fp = fopen('tmpTrainingRecord_User.csv', 'w');
                     //for support Thai 
                     fputs($fp,(chr(0xEF).chr(0xBB).chr(0xBF)));
 

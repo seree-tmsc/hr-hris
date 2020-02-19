@@ -1,71 +1,42 @@
 ﻿Biz,Dep,Sec,Task,Module,Code_Course,Course_Content,Course_Name,Position
-BIZ,IT,ERP,,"Technical Skill ( Job Family )",TC-027,"ทักษะการจัดการระบบเครือข่ายเทคโนโลยีสารสนเทศ 
-(Inf","ทักษะการจัดการระบบเครือข่ายเทคโนโลยีสารสนเทศ 
-(Inf",Sr.Staff
-BIZ,IT,SYS,,"Technical Skill ( Job Family )",TC-027,"ทักษะการจัดการระบบเครือข่ายเทคโนโลยีสารสนเทศ 
-(Inf","ทักษะการจัดการระบบเครือข่ายเทคโนโลยีสารสนเทศ 
-(Inf",Sr.Staff
-BIZ,IT,ERP,,"Technical Skill ( Job Family )",TC-028,"ทักษะการจัดการระบบปฎิบัติการ เซิร์ฟเวอร์ และฮาร์ดแ","ทักษะการจัดการระบบปฎิบัติการ เซิร์ฟเวอร์ และฮาร์ดแ",Sr.Staff
-BIZ,IT,SYS,,"Technical Skill ( Job Family )",TC-028,"ทักษะการจัดการระบบปฎิบัติการ เซิร์ฟเวอร์ และฮาร์ดแ","ทักษะการจัดการระบบปฎิบัติการ เซิร์ฟเวอร์ และฮาร์ดแ",Sr.Staff
-BIZ,IT,ERP,,"Technical Skill ( Job Family )",TC-031,"ทักษะการบริหารจัดการโครงการด้าน IT
-(Project Manage","ทักษะการบริหารจัดการโครงการด้าน IT
-(Project Manage",Sr.Staff
-BIZ,IT,SYS,,"Technical Skill ( Job Family )",TC-031,"ทักษะการบริหารจัดการโครงการด้าน IT
-(Project Manage","ทักษะการบริหารจัดการโครงการด้าน IT
-(Project Manage",Sr.Staff
-BIZ,IT,ERP,,"Technical Skill ( Job Family )",TC-035,"ทักษะการพัฒนาแอปพลิเคชั่น/โปรแกรม 
-(Application & ","ทักษะการพัฒนาแอปพลิเคชั่น/โปรแกรม 
-(Application & ",Sr.Staff
-BIZ,IT,SYS,,"Technical Skill ( Job Family )",TC-035,"ทักษะการพัฒนาแอปพลิเคชั่น/โปรแกรม 
-(Application & ","ทักษะการพัฒนาแอปพลิเคชั่น/โปรแกรม 
-(Application & ",Sr.Staff
-BIZ,IT,ERP,,"Technical Skill ( Job Family )",TC-040,"ทักษะการออกแบบและบริหารจัดการฐานข้อมูล 
-(Database ","ทักษะการออกแบบและบริหารจัดการฐานข้อมูล 
-(Database ",Sr.Staff
-BIZ,IT,SYS,,"Technical Skill ( Job Family )",TC-040,"ทักษะการออกแบบและบริหารจัดการฐานข้อมูล 
-(Database ","ทักษะการออกแบบและบริหารจัดการฐานข้อมูล 
-(Database ",Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-ACH-001,"Achievement Orientation","Achievement Orientation",Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-ACH-001,"Achievement Orientation","Achievement Orientation",Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-AT-002,"Analytical Thinking","Analytical Thinking",Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-AT-002,"Analytical Thinking","Analytical Thinking",Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-CL-003,"Change Leadership","Change Leadership",Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-CL-003,"Change Leadership","Change Leadership",Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-CSO-004,"Customer Service Orientation","Customer Service Orientation",Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-CSO-004,"Customer Service Orientation","Customer Service Orientation",Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-INT-005,Initiatieve,Initiatieve,Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-INT-005,Initiatieve,Initiatieve,Sr.Staff
-BIZ,IT,ERP,,"Core - Competency Skill",CC-TW-006,"Teamwork and cooperation ","Teamwork and cooperation ",Sr.Staff
-BIZ,IT,SYS,,"Core - Competency Skill",CC-TW-006,"Teamwork and cooperation ","Teamwork and cooperation ",Sr.Staff
-BIZ,IT,ERP,,"Functional - Competency Skill",FC-CT-001,"Conceptual Thinking","Conceptual Thinking",Sr.Staff
-BIZ,IT,SYS,,"Functional - Competency Skill",FC-CT-001,"Conceptual Thinking","Conceptual Thinking",Sr.Staff
-BIZ,IT,ERP,,"Functional - Competency Skill",FC-COQ-002,"Concern for Ordeer and Quality","Concern for Ordeer and Quality",Sr.Staff
-BIZ,IT,SYS,,"Functional - Competency Skill",FC-COQ-002,"Concern for Ordeer and Quality","Concern for Ordeer and Quality",Sr.Staff
-BIZ,IT,ERP,,"Functional - Competency Skill",FC-INF-004,"Information Seeking","Information Seeking",Sr.Staff
-BIZ,IT,SYS,,"Functional - Competency Skill",FC-INF-004,"Information Seeking","Information Seeking",Sr.Staff
-BIZ,IT,ERP,,"Leadership Skill ( Managerial Competency )",MC-TL-001-1,"Team Leadership ( TL)"," - Positive psychology for leadership",Sr.Staff
-BIZ,IT,SYS,,"Leadership Skill ( Managerial Competency )",MC-TL-001-1,"Team Leadership ( TL)"," - Positive psychology for leadership",Sr.Staff
-BIZ,IT,ERP,,"Leadership Skill ( Managerial Competency )",MC-TL-001-2,"Team Leadership ( TL)"," - Problem solving & decision making",Sr.Staff
-BIZ,IT,SYS,,"Leadership Skill ( Managerial Competency )",MC-TL-001-2,"Team Leadership ( TL)"," - Problem solving & decision making",Sr.Staff
-BIZ,IT,ERP,,"Leadership Skill ( Managerial Competency )",MC-TL-001-3,"Team Leadership ( TL)"," - Emotional intelligence for leadership",Sr.Staff
-BIZ,IT,SYS,,"Leadership Skill ( Managerial Competency )",MC-TL-001-3,"Team Leadership ( TL)"," - Emotional intelligence for leadership",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-001,"Progress Database Admin","Progress Database Admin",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-003,"Progress Database Admin","Progress Database Admin",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-003,"MFG/PRO Manager Function","MFG/PRO Manager Function",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-003,"MFG/PRO Manager Function","MFG/PRO Manager Function",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-004,"MFG/PRO System Admin","MFG/PRO System Admin",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-004,"MFG/PRO System Admin","MFG/PRO System Admin",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-006,"MFG/PRO Overview","MFG/PRO Overview",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-006,"MFG/PRO Overview","MFG/PRO Overview",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-007,"PROGRESS Programming fundamental","PROGRESS Programming fundamental",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-007,"PROGRESS Programming fundamental","PROGRESS Programming fundamental",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-008,"PROGRESS Programming Advance","PROGRESS Programming Advance",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-008,"PROGRESS Programming Advance","PROGRESS Programming Advance",Sr.Staff
-BIZ,IT,ERP,,"Basic Skill",IT-009,"Customization MFG/PRO","Customization MFG/PRO",Sr.Staff
-BIZ,IT,SYS,,"Basic Skill",IT-009,"Customization MFG/PRO","Customization MFG/PRO",Sr.Staff
-BIZ,IT,ERP,,"SHE & Q Skill",SHE-001,"การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ","การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ",Sr.Staff
-BIZ,IT,SYS,,"SHE & Q Skill",SHE-001,"การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ","การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ",Sr.Staff
-BIZ,IT,ERP,,"SHE & Q Skill",SHE-002,"Safety for new comer ( ความรู้เรื่องความปลอดภัยในก",ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม,Sr.Staff
-BIZ,IT,SYS,,"SHE & Q Skill",SHE-002,"Safety for new comer ( ความรู้เรื่องความปลอดภัยในก",ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม,Sr.Staff
-BIZ,IT,ERP,,"SHE & Q Skill",SHE-004,"Safety Officer for Supervisor (จป.หัวหน้างาน )","เจ้าหน้าที่ความปลอดภัยในการทำงานระดับหัวหน้างาน (S",Sr.Staff
-BIZ,IT,SYS,,"SHE & Q Skill",SHE-004,"Safety Officer for Supervisor (จป.หัวหน้างาน )","เจ้าหน้าที่ความปลอดภัยในการทำงานระดับหัวหน้างาน (S",Sr.Staff
+BIZ,ACC,ALL,ALL,"Basic Skill",AC-001,"ภาษีหัก ณ ที่จ่าย","ภาษีหัก ณ ที่จ่าย",SMG
+BIZ,ACC,ALL,ALL,"Basic Skill",AC-002,ภาษีมูลค่าเพิ่ม,ภาษีมูลค่าเพิ่ม,SMG
+BIZ,ACC,ALL,ALL,"Basic Skill",AC-003,MFG/PRO,MFG/PRO,SMG
+BIZ,ACC,ALL,ALL,"Basic Skill",AC-004,"การ Update กฎหมายใหม่ทางบัญชี","การ Update กฎหมายใหม่ทางบัญชี",SMG
+BIZ,ACC,ALL,ALL,"Basic Skill",AC-005,มาตรฐานการบัญชี,มาตรฐานการบัญชี,SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-ACH-001,"Achievement Orientation","Achievement Orientation",SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-AT-002,"Analytical Thinking","Analytical Thinking",SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-CL-003,"Change Leadership","Change Leadership",SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-CSO-004,"Customer Service Orientation","Customer Service Orientation",SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-INT-005,Initiatieve,Initiatieve,SMG
+BIZ,ACC,ALL,ALL,"Core - Competency Skill",CC-TW-006,"Teamwork and cooperation ","Teamwork and cooperation ",SMG
+BIZ,ACC,ALL,ALL,"Functional - Competency Skill",FC-COQ-002,"Concern for Ordeer and Quality","Concern for Ordeer and Quality",SMG
+BIZ,ACC,ALL,ALL,"Functional - Competency Skill",FC-INF-004,"Information Seeking","Information Seeking",SMG
+BIZ,ACC,ALL,ALL,"Functional - Competency Skill",FC-ING-005,Integrity,Integrity,SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-DEV-002-1,"Developing Other","People development and developing employees capability",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-DEV-002-2,"Developing Other"," Coaching Skill",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-PO-003-1,"Planning and Organization","Effective organization communication",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-PO-003-2,"Planning and Organization","Strategic disciplines for change leader",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-PO-003-3,"Planning and Organization","Managing high performance",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-TL-001-1,"Team Leadership ( TL)","Positive psychology for leadership",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-TL-001-2,"Team Leadership ( TL)","Problem solving & decision making",SMG
+BIZ,ACC,ALL,ALL,"Leadership Skill ( Managerial Competency )",MC-TL-001-3,"Team Leadership ( TL)","Emotional intelligence for leadership",SMG
+BIZ,ACC,ALL,ALL,"SHE & Q Skill",SHE-001,"การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ","การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) ",SMG
+BIZ,ACC,ALL,ALL,"SHE & Q Skill",SHE-002,"Safety for new comer ( ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม่)",ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม่,SMG
+BIZ,ACC,ALL,ALL,"SHE & Q Skill",SHE-004,"Safety Officer for Supervisor (จป.หัวหน้างาน )","เจ้าหน้าที่ความปลอดภัยในการทำงานระดับหัวหน้างาน (Safety Officer for Supervisor level)",SMG
+BIZ,ACC,ALL,ALL,"SHE & Q Skill",SHE-005,"Safety Officer for Management (จป.บริหาร )","เจ้าหน้าที่ความปลอดภัยในการทำงานระดับบริหาร (Safety Officer for Management level)",SMG
+BIZ,ACC,ALL,ALL,"Technical Skill ( Job Family )",TC-022,"ความรู้ และทักษะการบริหาร และควบคุมงบประมาณ
+(Knowledge of Budgeting Control)","ความรู้ และทักษะการบริหาร และควบคุมงบประมาณ
+(Knowledge of Budgeting Control)",SMG
+BIZ,ACC,ALL,ALL,"Technical Skill ( Job Family )",TC-029,"ทักษะการจัดทำรายงานวิเคราะห์ตัวเลขด้านบัญชี/การเงิน 
+(Accounting/Finance Analysis & Report Skill)","ทักษะการจัดทำรายงานวิเคราะห์ตัวเลขด้านบัญชี/การเงิน 
+(Accounting/Finance Analysis & Report Skill)",SMG
+BIZ,ACC,ALL,ALL,"Technical Skill ( Job Family )",TC-041,"ทักษะด้านภาษี
+(Tax Skill)","ทักษะด้านภาษี
+(Tax Skill)",SMG
+BIZ,ACC,ALL,ALL,"Technical Skill ( Job Family )",TC-042,"ทักษะทางด้านการเงิน
+(Financial Skill)","ทักษะทางด้านการเงิน
+(Financial Skill)",SMG
+BIZ,ACC,ALL,ALL,"Technical Skill ( Job Family )",TC-043,"ทักษะทางด้านบัญชี
+(Accounting Skill)","ทักษะทางด้านบัญชี
+(Accounting Skill)",SMG

@@ -21,7 +21,7 @@
 <body>
     <!-- Begin Body page -->
     <div class="container">
-        <!-- Begin content page-->
+        <!-- แถวที่ 1. ข้อมูลส่วนบุคคล -->
         <div class="row">
             <!-------------------- -->
             <!-- coluimn #1 3 unit -->
@@ -97,8 +97,10 @@
                     </div>
                 </div>
             </div>
+        
         </div>
 
+        <!-- แถวที่ 2. ข้อมูลหน่วยงาน -->
         <div class="row">
             <br>
             <div class="col-lg-12">
@@ -142,7 +144,8 @@
                 </div>
             </div>
         </div>
-
+        
+        <!-- แถวที่ 3. ที่อยู่ปัจจุบัน  -->
         <div class="row">
             <br>
             <div class="col-lg-12">
@@ -182,7 +185,8 @@
                 </div>
             </div>
         </div>
-
+        
+        <!-- แถวที่ 4. ประวัติการศึกษา  -->
         <div class="row">
             <br>
             <div class="col-lg-12">
@@ -228,6 +232,7 @@
             </div>
         </div>
 
+        <!--
         <div class="row">
             <br>
             <div class="col-lg-12">
@@ -238,11 +243,11 @@
                         <div class='form-group'>                            
                             <div class='col-lg-3' align='left'>
                                 <label>ระดับการศึกษา</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var46']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php //echo $_GET['var46']; ?>" >
                             </div>
                             <div class='col-lg-3' align='left'>
                                 <label>วุฒิการศึกษา</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var47']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php //echo $_GET['var47']; ?>" >
                             </div>
                             <div class='col-lg-6'>
                                 <label>&nbsp</label>
@@ -252,27 +257,28 @@
                         <div class='form-group'>
                             <div class='col-lg-5' align='left'>
                                 <label>สถาบัน</label>
-                                <!--<input type="text" readonly class="form-control" value="<?php //echo $_GET['var48']; ?>" >-->
+                                <input type="text" readonly class="form-control" value="<?php //echo $_GET['var48']; ?>" >
                                 <input type="text" readonly class="form-control" value="-" >
                             </div>
                             <div class='col-lg-3' align='left'>
                                 <label>คณะ</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var49']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php //echo $_GET['var49']; ?>" >
                             </div>
                             <div class='col-lg-3' align='left'>
                                 <label>วิชาเอก</label>
-                                <input type="text" readonly class="form-control" value="<?php echo $_GET['var50']; ?>" >
+                                <input type="text" readonly class="form-control" value="<?php //echo $_GET['var50']; ?>" >
                             </div>
                             <div class='col-lg-1' align='left'>
                                 <label>ปีที่จบ</label>
                                 <input type="text" readonly class="form-control" value="<?php 
-                                if(empty($_GET['var51'])) {echo '-';} else {echo date('Y',strtotime($_GET['var51']));} ?>" >
+                                //if(empty($_GET['var51'])) {echo '-';} else {echo date('Y',strtotime($_GET['var51']));} ?>" >
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        -->
 
         <div class="row">
         <?php

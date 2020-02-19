@@ -1,8 +1,52 @@
 ﻿Year,Period,Employee_Code,Thai_First_Name,Thai_Last_Name,Promote_From_Jg,Promote_From_Position,Promote_From_Dept,Promote_To_Jg,Promote_To_Position,Promote_To_Dept,Promote_Date
-2013,1,OC-011,รุ่งนภา,เทียนพิมาย,"10  ",Staff,IT,"11  ",Sr.Staff,IT
-2012,1,OC-006,ปริศนา,เชี่ยวสมุทร,,AM1,IT,"12  ",EXE,IT
-2012,1,OC-011,รุ่งนภา,เทียนพิมาย,,S3,IT,"10  ",Staff,IT
-2007,1,OC-006,ปริศนา,เชี่ยวสมุทร,,C3,IT,,AM1,IT
-2006,1,OC-011,รุ่งนภา,เทียนพิมาย,,,,,S3,IT
-2005,1,OC-006,ปริศนา,เชี่ยวสมุทร,,C2,IT,,C3,IT
-2003,1,OC-006,ปริศนา,เชี่ยวสมุทร,,,,,C2,IT
+2019,1,SR-031,ปฏิวัติ,วิชญาปกรณ์,"12  ",Specialist,RD-IRW,"13  ",MGR,RD-IRW
+2019,1,SR-060,สัญญา,หวังคุ้มกลาง,"7   ",Opr,RD-IRW,"8   ",Sr.Opr,RD-IRW
+2019,1,SR-062,วรรณนภา,ลีคำ,"10  ",Chemist,RD-IRW,"11  ","Sr. Chemist",RD-IRW
+2019,1,TR-056,ณกรณ์,ปรีชา,"10  ",Chemist,RD-IRS,"11  "," Sr. Chemist",RD-IRS
+2017,1,SR-041,บุญฤทธิ์,เลิศธนาภรณ์,"11  ",Sr.Staff,RD-IRW,"12  ",Specialist,RD-IRW
+2017,1,SR-047,อาจิณ,แก้วลาไลย,"7   ",Opr,RD-IRW,"8   ",Sr.Opr,RD-IRW
+2017,1,TR-037,สายทาง,วรรณวิจิตร,"7   ",Opr,RD-IRS,"8   ",Sr.Opr,RD-IRS
+2016,1,SR-031,ปฏิวัติ,วิชญาปกรณ์,"11  ",Sr.Staff,RD-IRW,"12  ","Specialist ",RD-IRW
+2016,1,SR-052,วีระศักดิ์,ไชยทองศรี,"10  ",Staff,RD-IRW,"11  ",Sr.Staff,RD-IRW
+2016,1,TR-028,"กมลวรรณ ",กิ่งพุทธพงษ์,"11  ",Sr.Staff,RD-IRS,"12  ",Specialist,RD-IRS
+2016,1,TR-029,"ภัทราพร ",หาญวานิช,"11  ",Sr.Staff,RD-IRS,"12  ",Specialist,RD-IRS
+2016,1,TR-032,"วรวรรณ  "," ประกิ่ง","7   ",Opr,RD-IRS,"8   ",Sr.Opr,RD-IRS
+2016,1,TR-052,ศตบุษป์,ทับประโคน,"10  ",Staff,RD-IRS,"11  ",Sr.Staff,RD-IRS
+2016,1,TR-058,ธีรภัทร์,เหลืออาลัย,"10  ",Staff,RD-IRS,"11  ",Sr.Staff,RD-IRS
+2015,1,SR-044,ธนพล,รุจิไพโรจน์,"10  ",Staff,RD-IRW,"11  ",Sr.Staff,RD-IRW
+2015,1,TR-008,ประยูร,อุตตะมา,"8   ",Sr.Opr,RD-IRS,"9   ",Sr.Opr,RD-IRS
+2014,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,"12  ",AM,RD-IRW,"13  ",Specialist,RD-IRW
+2014,1,SR-031,ปฏิวัติ,วิชญาปกรณ์,"10  ",Staff,RD-IRW,"11  ",Sr.Staff,RD-IRW
+2014,1,SR-041,บุญฤทธิ์,เลิศธนาภรณ์,"10  ",Staff,RD-IRW,"11  ",Sr.Staff,RD-IRW
+2014,1,TR-028,"กมลวรรณ ",กิ่งพุทธพงษ์,"10  ",Staff,RD-IRS,"11  ",Sr.Staff,RD-IRS
+2014,1,TR-029,"ภัทราพร ",หาญวานิช,"10  ",Staff,RD-IRS,"11  ",Sr.Staff,RD-IRS
+2013,1,SR-028,วิรัช,สีดำ,"7   ",Opr,RD-IRW,"8   ",Sr.Opr,RD-IRW
+2012,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,,AM2,RD-IRW,"12  ",AM,RD-IRW
+2012,1,SR-019,คทาวุธ,พรหมศิริ,,S1,RD-IRW,"8   ",Sr.Opr,RD-IRW
+2012,1,SR-021,สมชาย,มุ่งผลกลาง,,S1,RD-IRW,"8   ",Sr.Opr,RD-IRW
+2012,1,SR-028,วิรัช,สีดำ,,S1,RD-IRW,"7   ",Opr,RD-IRW
+2012,1,SR-031,ปฏิวัติ,วิชญาปกรณ์,,S3,RD-IRW,"10  ",Staff,RD-IRW
+2012,1,SR-041,บุญฤทธิ์,เลิศธนาภรณ์,,AC2,,"10  ",Staff,RD-IRW
+2012,1,SR-044,ธนพล,รุจิไพโรจน์,,S3,,"10  ",Staff,RD-IRW
+2012,1,TR-008,ประยูร,อุตตะมา,,S1,RD-IRS,"8   ",Sr.Opr,RD-IRS
+2012,1,TR-028,"กมลวรรณ ",กิ่งพุทธพงษ์,,S3,RD-IRS,"10  ",Staff,RD-IRS
+2012,1,TR-029,"ภัทราพร ",หาญวานิช,,S3,RD-IRS,"10  ",Staff,RD-IRS
+2012,1,TR-032,"วรวรรณ  "," ประกิ่ง",,S1,RD-IRS,"7   ",Opr,RD-IRS
+2010,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,,AM1,RD-IRW,,AM2,RD-IRW
+2010,1,SR-041,บุญฤทธิ์,เลิศธนาภรณ์,,S3,RD-IRW,,AC2,RD-IRW
+2010,1,TR-003,พัชรา,เขมวิรัตน์,,AM2,RD-IRS,,MGR,RD-IRS
+2009,1,TR-028,"กมลวรรณ ",กิ่งพุทธพงษ์,,,,,S3,RD-IRS
+2009,1,TR-029,"ภัทราพร ",หาญวานิช,,,,,S3,RD-IRS
+2008,1,SR-028,วิรัช,สีดำ,,,,,S1,RD-IRW
+2008,1,SR-031,ปฏิวัติ,วิชญาปกรณ์,,,,,S3,RD-IRW
+2008,1,TR-003,พัชรา,เขมวิรัตน์,,AM1,RD-IRS,,AM2,RD-IRS
+2007,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,,C1,RD-IRW,,AM1,RD-IRW
+2007,1,TR-003,พัชรา,เขมวิรัตน์,,C1,RD-IRS,,AM1,RD-IRS
+2006,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,,AC3,RD-IRW,,C1,RD-IRW
+2006,1,SR-021,สมชาย,มุ่งผลกลาง,,,,,S1,RD-IRW
+2006,1,SR-041,บุญฤทธิ์,เลิศธนาภรณ์,,,,,S3,RD-IRW
+2006,1,TR-003,พัชรา,เขมวิรัตน์,,AC3,RD-IRS,,C1,RD-IRS
+2006,1,TR-008,ประยูร,อุตตะมา,,,,,S2,RD-IRS
+2004,1,SR-005,ธวัลรัตน์,ธรรมสุทธิพงศ์,,,,,AC3,RD-IRW
+2004,1,SR-019,คทาวุธ,พรหมศิริ,,,,,S1,RD-IRW
+2004,1,TR-003,พัชรา,เขมวิรัตน์,,,,,AC3,RD-IRS

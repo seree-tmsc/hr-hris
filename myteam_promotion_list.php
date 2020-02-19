@@ -8,17 +8,17 @@
     <table class='table table-bordered table-hover' id='myTable'>
         <thead>
             <tr class='info'>
+                <th class='text-center' style='width:5%;'>No.</th>
                 <th class='text-center' style='width:8%;'>Year</th>
-                <th class='text-center' style='width:10%;'>Code</th>
-                <th class='text-center' style='width:10%;'>Title</th>
-                <th style='width:12%;'>F-Name</th>
-                <th style='width:26%;'>L-Name</th>
-                <th class='text-center' style='width:8%;'>From-JG</th>
-                <th class='text-center' style='width:8%;'>From-Position</th>
-                <th class='text-center' style='width:8%;'>From-Dept.</th>
-                <th class='text-center' style='width:8%;'>To-JG</th>
-                <th class='text-center' style='width:8%;'>To-Position</th>
-                <th class='text-center' style='width:8%;'>To-Dept.</th>
+                <th class='text-center' style='width:9%;'>Code</th>
+                <th style='width:10%;'>F-Name</th>
+                <th style='width:18%;'>L-Name</th>
+                <th class='text-center' style='width:5%;'>Fr.JG</th>
+                <th class='text-center' style='width:10%;'>Fr.Pos.</th>
+                <th class='text-center' style='width:10%;'>Fr.Dept.</th>
+                <th class='text-center' style='width:5%;'>To.JG</th>
+                <th class='text-center' style='width:10%;'>To.Pos.</th>
+                <th class='text-center' style='width:10%;'>To.Dept.</th>
             </tr>
         </thead>
         <tbody>
@@ -40,24 +40,28 @@
 
     if ($nRecCount >0)    
     {
+        $nI=1;
+        ob_start();
         while ($ds = $statement->fetch(PDO::FETCH_NAMED))
         {            
 ?> 
             <tr>
+                <td class='text-center'><?php echo $nI; ?></td>
                 <td class='text-center'><?php echo $ds['promotion_year']; ?></td>
                 <td class='text-center'><?php echo $ds['Emp_Code']; ?></td>
-                <td><?php echo $ds['emp_ttitle']; ?></td>
                 <td><?php echo $ds['emp_tfname']; ?></td>
                 <td><?php echo $ds['emp_tlname']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_from_jg']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_from_pos']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_from_dep']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_to_jg']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_to_pos']; ?></td>
-                <td class='text-right'><?php echo $ds['promotion_to_dep']; ?></td>            
+                <td class='text-center'><?php echo $ds['promotion_from_jg']; ?></td>
+                <td><?php echo $ds['promotion_from_pos']; ?></td>
+                <td><?php echo $ds['promotion_from_dep']; ?></td>
+                <td class='text-center'><?php echo $ds['promotion_to_jg']; ?></td>
+                <td><?php echo $ds['promotion_to_pos']; ?></td>
+                <td><?php echo $ds['promotion_to_dep']; ?></td>            
             </tr>
 <?php
+            $nI++;
         }
+        ob_end_flush();
     }
 ?>
         </tbody>

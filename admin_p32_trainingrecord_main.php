@@ -1,4 +1,5 @@
 <!-- Content Section -->
+
 <div class="row">
     <div class="col-md-12">
         <div class="form-inline">
@@ -527,7 +528,7 @@
 
             <?php
                 include_once('include/db_Conn.php');
-
+                
                 if( $_POST['selDept'] == 'ALL')
                 {
                     echo "Department : " . $_POST['selDept'] . "<br>";
@@ -540,7 +541,7 @@
                     $strSql .= "FROM MAS_TRAINING_RECORD_NEW T ";
                     $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
                     $strSql .= "ORDER BY T.Emp_Code ";
-                    echo $strSql . "<br>";
+                    //echo $strSql . "<br>";
                     
                 }
                 else IF ($_POST['selEmp'])
@@ -555,7 +556,7 @@
                     $strSql .= "AND E.job_position ='" .  $_POST['selPos'] . "'  ";
                     $strSql .= "AND E.emp_code ='" .  $_POST['selEmp'] . "'  ";
                     $strSql .= "ORDER BY T.Emp_Code ";
-                    echo $strSql . "<br>"; 
+                    //echo $strSql . "<br>"; 
 
                 }
                 else 
@@ -567,7 +568,7 @@
                     $strSql .= "JOIN Emp_Main E ON T.emp_code = E.emp_code ";
                     $strSql .= "WHERE E.emp_code ='" .  $_POST['selEmp'] . "' ";
                     $strSql .= "ORDER BY T.Emp_Code ";
-                    echo $strSql . "<br>";
+                    //echo $strSql . "<br>";
                 }
 
                 $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
@@ -623,3 +624,5 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div>
+<?Php
+

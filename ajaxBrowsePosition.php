@@ -1,7 +1,5 @@
 <?php
-    /*
-    echo  $_GET['dept'];
-    */
+    /*echo  $_GET['dept'];*/
 
     require_once('include/db_Conn.php');
 

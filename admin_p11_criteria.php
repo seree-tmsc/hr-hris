@@ -141,17 +141,17 @@
         $( "select[name='selDept']" ).click(function () 
         {
             var dept = $(this).val();
-            console.log(dept);
+            //console.log(dept);
 
             if(dept)
             {
                 $.ajax({
                     url: "ajaxBrowsePosition.php",
                     dataType: 'Json',
-                    data: {'dept':dept},
-                    
+                    data: {'dept': dept},
                     success: function(data) 
                     {
+                        //console.log('Success ' + JSON.stringify(data));
                         $('select[name="selPos"]').empty();
                         $('select[name="selPos"]').append('<option value=ALL>ALL</option>');
 
@@ -159,6 +159,12 @@
                         {
                             $('select[name="selPos"]').append('<option value="'+ key +'">'+ value +'</option>');
                         });
+                    },
+                    error: function(data)
+                    {
+                        //console.log('Error ' + JSON.stringify(data));
+                        //console.log(JSON.stringify(data['status']));
+                        $('select[name="selPos"]').empty();
                     }
                 });
             }

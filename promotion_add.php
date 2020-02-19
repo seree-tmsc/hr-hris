@@ -9,6 +9,7 @@ try
     $strSql .= "VALUES(";    
     $strSql .= "'" . $_POST["paramadd_emp_code"] . "',";
     $strSql .= "'" . $_POST["paramadd_promotion_year"] . "',";
+    $strSql .= "1,";
     $strSql .= "'" . $_POST["paramadd_promotion_from_jg"] . "',";
     $strSql .= "'" . $_POST["paramadd_promotion_from_pos"] . "',";
     $strSql .= "'" . $_POST["paramadd_promotion_from_dep"] . "',";
@@ -22,27 +23,28 @@ try
     $statement->execute();  
     $nRecCount = $statement->rowCount();
     //echo $nRecCount . "<br>";
+
     if ($nRecCount >0)
     {
         echo "<script> 
                 alert('Add data complete!'); 
-                window.location.href='admin_p22.php'; 
+                window.location.href='admin_p22_criteria.php'; 
             </script>";   
     }
     else
     {        
         echo "<script> 
                 alert('Warning! Cannot add data!'); 
-                window.location.href='admin_p22.php'; 
+                window.location.href='admin_p22_criteria.php'; 
             </script>";            
     }
-    
+
 }
 catch(PDOException $e)
 {
     echo "<script> 
             alert('Error!" . substr($e->getMessage(),0,105) . " '); 
-            window.location.href='admin_p22.php'; 
+            window.location.href='admin_p22_criteria.php'; 
         </script>";
 }
 

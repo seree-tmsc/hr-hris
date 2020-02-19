@@ -8,15 +8,16 @@
     <table class='table table-bordered table-hover' id='myTable'>
         <thead>
             <tr class='info'>
-                <th class='text-center' style='width:8%;'>Year</th>
+                <th class='text-center' style='width:5%;'>No.</th>
+                <th class='text-center' style='width:9%;'>Year</th>
                 <th class='text-center' style='width:10%;'>Code</th>
                 <th class='text-center' style='width:10%;'>Title</th>
                 <th style='width:12%;'>F-Name</th>
-                <th style='width:26%;'>L-Name</th>
-                <th class='text-center' style='width:8%;'>KPI</th>
-                <th class='text-center' style='width:8%;'>Comp.</th>
-                <th class='text-center' style='width:8%;'>Tot.</th>
-                <th class='text-center' style='width:10%;'>Grade</th>
+                <th style='width:18%;'>L-Name</th>
+                <th class='text-center' style='width:9%;'>KPI</th>
+                <th class='text-center' style='width:9%;'>Comp.</th>
+                <th class='text-center' style='width:9%;'>Tot.</th>
+                <th class='text-center' style='width:9%;'>Grade</th>
             </tr>
         </thead>
         <tbody>
@@ -38,10 +39,13 @@
 
     if ($nRecCount >0)    
     {
+        $nI=1;
+        ob_start();
         while ($ds = $statement->fetch(PDO::FETCH_NAMED))
         {            
 ?> 
             <tr>
+                <td class='text-center'><?php echo $nI; ?></td>
                 <td class='text-center'><?php echo $ds['performance_year']; ?></td>
                 <td class='text-center'><?php echo $ds['Emp_Code']; ?></td>
                 <td><?php echo $ds['emp_ttitle']; ?></td>
@@ -53,7 +57,9 @@
                 <td class='text-center'><?php echo $ds['performance_grade']; ?></td>                
             </tr>
 <?php
+            $nI++;
         }
+        ob_end_flush();
     }
 ?>
         </tbody>

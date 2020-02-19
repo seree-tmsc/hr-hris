@@ -8,7 +8,7 @@
     <div class="col-md-12">
         <div class="form-inline">
             Search : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by user code.." title="Type user code">
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(1)" placeholder="Search by user code.." title="Type user code">
     
             <div class="pull-right">
                 <button class="btn btn-success" data-toggle="modal" data-target="#add_record_modal">

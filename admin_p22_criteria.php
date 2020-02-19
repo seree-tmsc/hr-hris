@@ -171,6 +171,12 @@
                         {
                             $('select[name="selPos"]').append('<option value="'+ key +'">'+ value +'</option>');
                         });
+                    },
+
+                    error: function(data)
+                    {
+                        $('select[name="selPos"]').empty();
+                        $('select[name="selEmp"]').empty();
                     }
                 });
             }
@@ -205,6 +211,11 @@
                         {
                             $('select[name="selEmp"]').append('<option value="'+ key +'">'+ key + " " + value +'</option>');
                         });
+                    },
+
+                    error: function(data)
+                    {
+                        $('select[name="selEmp"]').empty();
                     }
                 });
             }

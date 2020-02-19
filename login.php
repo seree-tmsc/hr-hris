@@ -70,7 +70,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <title>Login Page</title>
+        <title>TMSC HRIS Ver 1.0</title>
+        <link rel="icon" href="images/tmsc-logo-128.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/tmsc-logo-128.png" type="image/x-icon" />
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="../vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -78,13 +80,16 @@
         <script src="../vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
         <style>
-            .login-bg-dark{
-                background-color: silver;
+            .login-bg{
+                background-image: url('images/background-02.jpg');
+                background-repeat: no-repeat; 
+                background-size: cover; 
+                opacity:0.8;
             }
         </style>
     </head>
 
-    <body class="login-bg-dark">
+    <body class="login-bg">
         <br />
         <!-- Begin Container -->
         <div class="container">

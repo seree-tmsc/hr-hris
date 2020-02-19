@@ -1,17 +1,14 @@
 <h3 align="center"><font color="red">My Team - Employee Data</font></h3>
-
+<hr>
 <div class="row">
-    <!--
-    <div class="col-md-1">
-    </div>
-    -->
     <div class="col-md-12">
         <div class="form-inline">
             Search By Department : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(1)" placeholder="Department ..." title="Input department">
-
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(2)" placeholder="Department ..." title="Input department">
+            <!-- 
             Search By Section : 
-            <input type="text" class="form-control" id="myInput2" onkeyup="Func_Search2(2)" placeholder="Section ..." title="Input section">
+            <input type="text" class="form-control" id="myInput2" onkeyup="Func_Search2(3)" placeholder="Section ..." title="Input section">
+            -->
 
             <div class="pull-right">                
                 <button class="btn btn-success" data-toggle="modal" data-target="#export_modal">
@@ -20,11 +17,7 @@
                 </button>
             </div>
         </div>
-    </div>
-    <!--
-    <div class="col-md-1">
-    </div>
-    -->
+    </div>    
 </div>
 <br>
 
@@ -79,6 +72,7 @@
         if(strlen($condition) != 0)
         {
             require_once("myteam_list.php");
+            echo "<h3>Complete!</h3>";
         }
         else
         {
@@ -87,6 +81,7 @@
     }
 ?>
 
+<!-- modal Download CSV File -->
 <div class="modal fade" id="export_modal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -133,7 +128,8 @@
                                                 $ds["emp_efname"], 
                                                 $ds["emp_elname"],
                                                 $ds["emp_nname"],
-                                                $ds["emp_id_no"],
+                                                //$ds["emp_id_no"],
+                                                'x-xxxx-xxxxx-xx-x',
                                                 date('Y-m-d', strtotime($ds["emp_birth_date"])),
                                                 $ds["emp_mobile_no"],
                                                 $ds["emp_emergency_mobile_no"],
@@ -199,6 +195,6 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+    </div>
+</div>

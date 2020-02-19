@@ -23,7 +23,8 @@
         <p></p>
         <!--<h5>User Data:</h5>-->
         <?php
-            include "performance_list.php";                    
+            include "performance_list.php";
+            echo "<h3>Complete!</h3>";
         ?>
     </div>
 </div>        

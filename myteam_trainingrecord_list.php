@@ -32,7 +32,7 @@
     //$strSql .= "FROM MAS_TRAINING_ROADMAP_NEW " ;
 
     $strSql = "SELECT T.*, E.job_department, E.job_position ";
-    $strSql .= "FROM MAS_TRAINING_RECORD_NEW AS T INNER JOIN Emp_main AS E ON T.DEPt = E.job_department and T.Position = E.job_position and T.Section = E.job_section ";
+    $strSql .= "FROM MAS_TRAINING_RECORD_NEW AS T INNER JOIN Emp_main AS E ON T.Business = E.job_business and T.DEPt = E.job_department and T.Position = E.job_position and T.Section = E.job_section ";
     $strSql .= "WHERE " . substr($condition, 2, strlen($condition)-2);    
     //$strSql .= "ORDER BY SEC,Position,Code_Course" ;
     $strSql .= "ORDER BY start_date,job_business, job_department, emp_code" ;

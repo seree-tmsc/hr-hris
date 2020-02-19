@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <div class="form-inline">
             Search : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by employee code..." title="Type employee code">
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(1)" placeholder="Search by employee code..." title="Type employee code">
     
             <div class="pull-right">
                 <button class="btn btn-info" data-toggle="modal" data-target="#export_modal">
@@ -26,8 +26,9 @@
         <p></p>
         <!--<h5>User Data:</h5>-->
         <?php
-            include "emp_master_list.php";                    
+            include "emp_master_list.php";
         ?>
+        <h3>Complete!</h3>
     </div>
 </div>    
 
@@ -444,7 +445,7 @@
                             <input type="text" required class="form-control" name="update_emp_id_no" id="update_emp_id_no" maxlength="13">
                         </div>
                         <div class="col-lg-3">
-                            <label>วันเกิด</label>
+                            <label>วันเกิด (พ.ศ.)</label>
                             <input type="text" required class="form-control" name="update_emp_birth_date" id="update_emp_birth_date" >
                         </div>
                         <div class="col-lg-3">
@@ -571,7 +572,7 @@
                             <input type="text" class="form-control" name="update_edu_major1" id="update_edu_major1" >
                         </div>
                         <div class="col-lg-2">
-                            <label>ปีที่จบ</label>
+                            <label>ปีที่จบ (ค.ศ.)</label>
                             <input type="text" class="form-control" name="update_edu_graduated_year1" id="update_edu_graduated_year1" maxlength="4">
                         </div>
                         <div class="col-lg-2">
@@ -580,6 +581,7 @@
                         </div>
                     </div>
                     <!-- แถวที่ 3.3 -->
+                    <!--
                     <div class="form-group">
                         <div class="col-lg-3">  
                             <label>&nbsp;</label>                
@@ -607,7 +609,9 @@
                             <input type="text" class="form-control" name="update_edu_faculty2" id="update_edu_faculty2" >
                         </div>
                     </div>
+                    -->
                     <!-- แถวที่ 3.4 -->
+                    <!--
                     <div class="form-group">
                         <div class="col-lg-3">
                         </div>
@@ -624,6 +628,7 @@
                             <input type="text" class="form-control" name="update_edu_grade2" id="update_edu_grade2" maxlength="4">
                         </div>
                     </div>
+                    -->
                     <hr>
                     <!-- ส่วนที่ 4 ข้อมูลตำแหน่งงาน -->
                     <div class="col-lg-12">
@@ -699,7 +704,7 @@
                             </select>
                         </div>
                         <div class="col-lg-2">
-                            <label>Start w-Date</label>
+                            <label>วันเริ่มงาน (พ.ศ.)</label>
                             <input type="text" class="form-control" name="update_job_working_date" id="update_job_working_date">
                         </div>
                     </div>

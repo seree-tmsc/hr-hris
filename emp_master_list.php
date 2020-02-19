@@ -14,16 +14,18 @@
         <div class='table-responsive'>
             <table class='table table-bordered table-hover' id='myTable'>            
                 <thead>               
-                    <tr class='info'>                
+                    <tr class='info'>
+                        <th style='width:4%;' class='text-center'>No.</th>
                         <th style='width:8%;' class='text-center'>Code</th>
-                        <th style='width:8%;' class='text-center'>คำนำหน้า</th>
-                        <th style='width:8%;' class='text-center'>ชื่อ</th>
-                        <th style='width:18%;' class='text-center'>นามสกุล</th>
-                        <th style='width:8%;' class='text-center'>Title</th>
-                        <th style='width:8%;' class='text-center'>First Name</th>
-                        <th style='width:18%;' class='text-center'>Last Name</th>
-                        <th style='width:18%;' class='text-center'>Picture</th>
-                        <th style='width:6%;' class='text-center'>Mode</th>                
+                        <th style='width:7%;' class='text-center'>คำนำหน้า</th>
+                        <th style='width:10%;' class='text-center'>ชื่อ</th>
+                        <th style='width:15%;' class='text-center'>นามสกุล</th>
+                        <th style='width:7%;' class='text-center'>Title</th>
+                        <th style='width:10%;' class='text-center'>First Name</th>
+                        <th style='width:15%;' class='text-center'>Last Name</th>
+                        <th style='width:8%;' class='text-center'>Position</th>
+                        <th style='width:8%;' class='text-center'>Picture</th>
+                        <th style='width:8%;' class='text-center'>Mode</th>                
                     </tr>
                 </thead>
                 <tbody>
@@ -58,8 +60,10 @@
        
         if ($nRecCount >0)
         {
+            $nOrder = 1;
+            ob_start();
             while ($ds = $statement->fetch(PDO::FETCH_NAMED))
-            {                
+            {
                 $BirthDate = new DateTime($ds['emp_birth_date']);
                 $tmpBirthDate = $BirthDate->format('Y')+543 . "/".$BirthDate->format('m') . "/". $BirthDate->format('d');
                 $BirthDate = new DateTime($tmpBirthDate);
@@ -77,6 +81,7 @@
 ?>
 
                 <tr>
+                    <td class='text-center'><?php echo $nOrder; ?></td>
                     <td class='text-center'><?php echo $ds['emp_code']; ?></td>
                     <td><?php echo $ds['emp_ttitle']; ?></td>
                     <td><?php echo $ds['emp_tfname']; ?></td>
@@ -84,10 +89,14 @@
                     <td><?php echo $ds['emp_etitle']; ?></td>
                     <td><?php echo $ds['emp_efname']; ?></td>
                     <td><?php echo $ds['emp_elname']; ?></td>
+                    <td><?php echo $ds['job_position']; ?></td>
                     <td align='center'>
                         <img src='<?php echo $ds['emp_picture'] . '?v=' . date("YmdHis"); ?>' height='72' width='48'>
                     </td>
-                    <td class='text-center'>                        
+                    <td class='text-center'>
+                        <?php 
+                            $cEmp_Picture = str_replace('\\', '/', $ds['emp_picture']);
+                        ?>
                         <a href='#' onclick="javascript:showModalUpdate_emp_master(                            
                             '<?php echo $ds['emp_code']; ?>',
                             '<?php echo $ds['emp_ttitle']; ?>',
@@ -103,8 +112,8 @@
                             '<?php echo $ds['emp_emergency_mobile_no']; ?>',
                             '<?php echo $ds['emp_religion']; ?>',
                             '<?php echo $ds['emp_current_status']; ?>',
-                            '<?php echo $ds['emp_blood_type']; ?>',
-                            '<?php echo $ds['emp_picture']; ?>',
+                            '<?php echo $ds['emp_blood_type']; ?>',                            
+                            '<?php echo $cEmp_Picture; ?>',
                             '<?php echo $ds['job_business']; ?>',
                             '<?php echo $ds['job_department']; ?>',
                             '<?php echo $ds['job_section']; ?>',
@@ -162,7 +171,9 @@
                     </td>
                 </tr>
 <?php
+                $nOrder++;
             }
+            ob_end_flush();
             echo "</tbody>";
             echo "</table>";
             echo "</div>";

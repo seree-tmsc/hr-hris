@@ -1,5 +1,5 @@
 <h3 align="center"><font color="red">My Team - Promotion Data</font></h3>
-
+<hr>
 <div class="row">
     <!--
     <div class="col-md-1">
@@ -8,7 +8,7 @@
     <div class="col-md-12">
         <div class="form-inline">
             Search By Code : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(1)" placeholder="Employee Code..." title="Input Employee Code">
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(2)" placeholder="Employee Code..." title="Input Employee Code">
             <div class="pull-right">                
                 <button class="btn btn-success" data-toggle="modal" data-target="#export_modal">
                     <span class="fa fa-cloud-download"></span> 
@@ -76,6 +76,7 @@
         if(strlen($condition) != 0)
         {
             require_once("myteam_promotion_list.php");
+            echo "<h3>Complete!</h3>";
         }
         else
         {
@@ -84,6 +85,7 @@
     }
 ?>
 
+<!-- modal  Download CSV File -->
 <div class="modal fade" id="export_modal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -157,6 +159,6 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+    </div>
+</div>

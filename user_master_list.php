@@ -5,12 +5,13 @@
         echo "<table class='table table-bordered table-hover' id='myTable'>";        
         echo "<thead>";
         echo "<tr class='info'>";
-        echo "<th style='width:10%;'>Code</th>";
-        echo "<th style='width:10%;'>First Name</th>";
-        echo "<th style='width:15%;'>Last Name</th>";
+        echo "<th style='width:5%;' class='text-center'>No.</th>";
+        echo "<th style='width:10%;' class='text-center'>Emp.Code</th>";
+        echo "<th style='width:15%;'>First-Name</th>";
+        echo "<th style='width:20%;'>Last-Name</th>";
         echo "<th style='width:20%;'>e-Mail</th>";
-        echo "<th style='width:5%;' class='text-center'>Type</th>";
-        echo "<th style='width:15%;' class='text-center'>Created Date</th>";        
+        echo "<th style='width:10%;' class='text-center'>User-Type</th>";
+        echo "<th style='width:10%;' class='text-center'>Created Date</th>";        
         echo "<th style='width:10%;' class='text-center'>Mode</th>";        
         echo "</tr>";
         echo "</thead>";
@@ -26,8 +27,11 @@
         $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
         $statement->execute();  
         $nRecCount = $statement->rowCount();
+        //echo $nRecCount . "<br>";
+
         if ($nRecCount >0)
         {
+            $nI=1;
             while ($ds = $statement->fetch(PDO::FETCH_NAMED))
             {
                 $strSql = "SELECT * ";
@@ -38,12 +42,15 @@
                 $statement2 = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
                 $statement2->execute();  
                 $nRecCount2 = $statement2->rowCount();
+                //echo $nRecCount2 . "<br>";
+
                 if ($nRecCount2 == 1)
                 {
                     $ds2 = $statement2->fetch(PDO::FETCH_NAMED)
 ?>
                     <tr>
-                        <td> <?php echo $ds['emp_code']; ?> </td>
+                        <td class='text-center'> <?php echo $nI; ?> </td>
+                        <td class='text-center'> <?php echo $ds['emp_code']; ?> </td>
                         <td> <?php echo $ds2['emp_tfname']; ?> </td>
                         <td> <?php echo $ds2['emp_tlname']; ?> </td>
                         <td> <?php echo $ds['user_email']; ?> </td>
@@ -80,6 +87,7 @@
                 }
 ?>                               
 <?php
+                $nI++;
             }
             echo "</tbody>";
             echo "</table>";

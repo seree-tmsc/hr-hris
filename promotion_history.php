@@ -8,7 +8,7 @@
     $strSql = "SELECT * " ;
     $strSql .= "FROM MAS_Promotion " ;
     $strSql .= "WHERE emp_code='". $param_emp_code . "' ";
-    $strSql .= "ORDER BY promotion_year ";
+    $strSql .= "ORDER BY promotion_year DESC";
     //echo $strSql . "<br>";
     
     $statement = $conn->prepare( $strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));  
@@ -17,14 +17,15 @@
     //echo "Record Count = " . $nRecCount ."<br>";
     
     echo "<h3 align='center'><font color='red'>Promotion History Data</font></h3>";
+    echo "<hr>";
 
     if ($nRecCount >0)
     {
-?>                
+?>
+        <!--
         <div class="row">
             <div class="col-md-12">
                 <div class="form-inline">
-                    <!--
                     Search : 
                     <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(0)" placeholder="Search by year.." title="Type year">                    
                     <div class="pull-right">
@@ -33,11 +34,11 @@
                             Download CSV File
                         </button>
                     </div>
-                    -->
                 </div>
             </div>
         </div>                    
         <br>
+        -->
 
         <div class='table-responsive'>
             <table class='table table-bordered table-hover' id='myTable' style='width:100%;' align="center">

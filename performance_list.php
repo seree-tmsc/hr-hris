@@ -78,6 +78,7 @@
         $nRecCount = $statement->rowCount();
         if ($nRecCount >0)
         {
+            ob_start();
             while ($ds = $statement->fetch(PDO::FETCH_NAMED))
             {                       
 ?>                
@@ -119,6 +120,7 @@
                 </tr>                
 <?php
             }
+            ob_end_flush();
             echo "</tbody>";
             echo "</table>";
             echo "</div>";

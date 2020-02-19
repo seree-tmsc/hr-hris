@@ -34,6 +34,7 @@
         <p></p>
         <!--<h5>User Data:</h5>-->
         <?php include "promotion_list.php"; ?>
+        <h3>Complete!</h3>
     </div>
 </div>    
 
@@ -111,16 +112,16 @@
                             <label>New-JG:</label>
                             <select required class="form-control" name="paramadd_promotion_to_jg">
                                 <option value="-">-</option>
-                                <option value="JG7">JG 7</option>
-                                <option value="JG8">JG 8</option>
-                                <option value="JG9">JG 9</option>
-                                <option value="JG10">JG 10</option>
-                                <option value="JG11">JG 11</option>
-                                <option value="JG12">JG 12</option>
-                                <option value="JG13">JG 13</option>
-                                <option value="JG14">JG 14</option>
-                                <option value="JG15">JG 15</option>
-                                <option value="JG16">JG 16</option>                                
+                                <option value="7">JG 7</option>
+                                <option value="8">JG 8</option>
+                                <option value="9">JG 9</option>
+                                <option value="10">JG 10</option>
+                                <option value="11">JG 11</option>
+                                <option value="12">JG 12</option>
+                                <option value="13">JG 13</option>
+                                <option value="14">JG 14</option>
+                                <option value="15">JG 15</option>
+                                <option value="16">JG 16</option>                                
                             </select>                            
                         </div>
                         <div class="col-lg-3">
@@ -227,16 +228,16 @@
                             <label>New-JG:</label>
                             <select required class="form-control" id ="update_promotion_to_jg" name="paramupdate_promotion_to_jg">
                                 <option value="-">-</option>
-                                <option value="JG7">JG 7</option>
-                                <option value="JG8">JG 8</option>
-                                <option value="JG9">JG 9</option>
-                                <option value="JG10">JG 10</option>
-                                <option value="JG11">JG 11</option>
-                                <option value="JG12">JG 12</option>
-                                <option value="JG13">JG 13</option>
-                                <option value="JG14">JG 14</option>
-                                <option value="JG15">JG 15</option>
-                                <option value="JG16">JG 16</option>                                
+                                <option value="7">JG 7</option>
+                                <option value="8">JG 8</option>
+                                <option value="9">JG 9</option>
+                                <option value="10">JG 10</option>
+                                <option value="11">JG 11</option>
+                                <option value="12">JG 12</option>
+                                <option value="13">JG 13</option>
+                                <option value="14">JG 14</option>
+                                <option value="15">JG 15</option>
+                                <option value="16">JG 16</option>                                
                             </select>                            
                         </div>
                         <div class="col-lg-3">
@@ -341,16 +342,16 @@
                             <label>New-JG:</label>
                             <select disabled class="form-control" id="delete_promotion_to_jg">
                                 <option value="-">-</option>
-                                <option value="JG7">JG 7</option>
-                                <option value="JG8">JG 8</option>
-                                <option value="JG9">JG 9</option>
-                                <option value="JG10">JG 10</option>
-                                <option value="JG11">JG 11</option>
-                                <option value="JG12">JG 12</option>
-                                <option value="JG13">JG 13</option>
-                                <option value="JG14">JG 14</option>
-                                <option value="JG15">JG 15</option>
-                                <option value="JG16">JG 16</option>                                
+                                <option value="7">JG 7</option>
+                                <option value="8">JG 8</option>
+                                <option value="9">JG 9</option>
+                                <option value="10">JG 10</option>
+                                <option value="11">JG 11</option>
+                                <option value="12">JG 12</option>
+                                <option value="13">JG 13</option>
+                                <option value="14">JG 14</option>
+                                <option value="15">JG 15</option>
+                                <option value="16">JG 16</option>                                
                             </select>                            
                         </div>
                         <div class="col-lg-3">

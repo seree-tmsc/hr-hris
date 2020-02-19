@@ -1,0 +1,12 @@
+﻿Employee_Code,Thai_First_Name,Thai_Last_Name,Year,Period,Promote_From_Jg,Promote_From_Position,Promote_From_Dept,Promote_To_Jg,Promote_To_Position,Promote_To_Dept,Enter_Date
+OH-004,สวัสดิ์,แสงแดง,2012,1,,MON,HR&Admin,"8   ",Sr.Opr,HR&Admin,2019-07-11
+OH-014,มยุรา,กิ่งเกล้า,2008,1,,AC3,HR&Admin,,C1,HR&Admin,2019-07-11
+OH-014,มยุรา,กิ่งเกล้า,2012,1,,C1,HR&Admin,"11  ",Sr.Staff,HR&Admin,2019-07-11
+OH-014,มยุรา,กิ่งเกล้า,2014,1,"11  ",Sr.Staff,HR&Admin,"12  ",Sr.Staff,HR&Admin,2019-07-11
+OH-024,ณภพ,เมียงเมิน,2016,1,"9   ",Staff,HR&Admin,"10  ",Sr.Staff,HR&Admin,2019-07-11
+ZH-001,วรรณี,ดีมาก,2005,1,,AC2,HR&Admin,,AC3,HR&Admin,2019-07-11
+ZH-001,วรรณี,ดีมาก,2012,1,,AC3,HR&Admin,"10  ",Sr.Staff,HR&Admin,2019-07-11
+ZH-004,อัญชลี,คุ้มยงค์,2007,1,,,,,S3,HR&Admin,2019-07-11
+ZH-004,อัญชลี,คุ้มยงค์,2012,1,,S3,HR&Admin,"9   ",Staff,HR&Admin,2019-07-11
+ZH-004,อัญชลี,คุ้มยงค์,2016,1,"9   ",Staff,HR&Admin,"10  ",Sr.Staff,HR&Admin,2019-07-11
+ZH-010,กิตติพศ,ผ่องสูงเนิน,2019,1,"10  ",Sr.Staff,HR&Admin,"11  ",C,HR&Admin,2019-07-11

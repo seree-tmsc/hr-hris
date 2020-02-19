@@ -16,7 +16,7 @@
         {
             echo "<script> 
                     alert('Delete data complete!'); 
-                    window.location.href='admin_p21.php'; 
+                    window.location.href='admin_p21_criteria.php'; 
                 </script>";
             //Redirect browser
             //header("Location: p61.php");
@@ -25,7 +25,7 @@
         {
             echo "<script> 
                     alert('Warning! Cannot delete data!'); 
-                    window.location.href='admin_p21.php'; 
+                    window.location.href='admin_p21_criteria.php'; 
                 </script>";
         }        
     }

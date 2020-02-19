@@ -1,32 +1,38 @@
 ﻿Training_set,Module,Code_Course,Code_Name
-"Training Set 114","Basic Skill",IT-001,"Progress Database Admin"
-"Training Set 114","Basic Skill",IT-003,"MFG/PRO Manager Function"
-"Training Set 114","Basic Skill",IT-004,"MFG/PRO System Admin"
-"Training Set 114","Basic Skill",IT-006,"MFG/PRO Overview"
-"Training Set 114","Basic Skill",IT-007,"PROGRESS Programming fundamental"
-"Training Set 114","Basic Skill",IT-008,"PROGRESS Programming Advance"
-"Training Set 114","Basic Skill",IT-009,"Customization MFG/PRO"
-"Training Set 114","Core - Competency Skill",CC-ACH-001,"Achievement Orientation"
-"Training Set 114","Core - Competency Skill",CC-AT-002,"Analytical Thinking"
-"Training Set 114","Core - Competency Skill",CC-CL-003,"Change Leadership"
-"Training Set 114","Core - Competency Skill",CC-CSO-004,"Customer Service Orientation"
-"Training Set 114","Core - Competency Skill",CC-INT-005,Initiatieve
-"Training Set 114","Core - Competency Skill",CC-TW-006,"Teamwork and cooperation "
-"Training Set 114","Functional - Competency Skill",FC-COQ-002,"Concern for Ordeer and Quality"
-"Training Set 114","Functional - Competency Skill",FC-CT-001,"Conceptual Thinking"
-"Training Set 114","Functional - Competency Skill",FC-INF-004,"Information Seeking"
-"Training Set 114","Leadership Skill ( Managerial Competency )",MC-TL-001-1," - Positive psychology for leadership"
-"Training Set 114","Leadership Skill ( Managerial Competency )",MC-TL-001-2," - Problem solving & decision making"
-"Training Set 114","Leadership Skill ( Managerial Competency )",MC-TL-001-3," - Emotional intelligence for leadership"
-"Training Set 114","SHE & Q Skill",SHE-001,"การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) "
-"Training Set 114","SHE & Q Skill",SHE-002,ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม
-"Training Set 114","SHE & Q Skill",SHE-004,"เจ้าหน้าที่ความปลอดภัยในการทำงานระดับหัวหน้างาน (S"
-"Training Set 114","Technical Skill ( Job Family )",TC-027,"ทักษะการจัดการระบบเครือข่ายเทคโนโลยีสารสนเทศ 
-(Inf"
-"Training Set 114","Technical Skill ( Job Family )",TC-028,"ทักษะการจัดการระบบปฎิบัติการ เซิร์ฟเวอร์ และฮาร์ดแ"
-"Training Set 114","Technical Skill ( Job Family )",TC-031,"ทักษะการบริหารจัดการโครงการด้าน IT
-(Project Manage"
-"Training Set 114","Technical Skill ( Job Family )",TC-035,"ทักษะการพัฒนาแอปพลิเคชั่น/โปรแกรม 
-(Application & "
-"Training Set 114","Technical Skill ( Job Family )",TC-040,"ทักษะการออกแบบและบริหารจัดการฐานข้อมูล 
-(Database "
+"Training Set 038","Basic Skill",EN-001,P&ID
+"Training Set 038","Basic Skill",EN-002,"Process flow"
+"Training Set 038","Basic Skill",EN-003,"Characteristic of chemical"
+"Training Set 038","Basic Skill",EN-004,"Heat and Mass  balance"
+"Training Set 038","Basic Skill",EN-005,"Specification of equipment in process"
+"Training Set 038","Basic Skill",EN-006,"Calculation and Design equipment in process such as Reactor ,Agitator, Condenser and so on"
+"Training Set 038","Basic Skill",EN-007,"Production manufacturing"
+"Training Set 038","Basic Skill",EN-008,"R&D synthesis in flask"
+"Training Set 038","Basic Skill",EN-009,HAZOP
+"Training Set 038","Basic Skill",EN-010,"DCS sequence"
+"Training Set 038","Basic Skill",EN-011,"Factory Layout , Plot plan and Master plan"
+"Training Set 038","Basic Skill",EN-012,"Engineering safety"
+"Training Set 038","Core - Competency Skill",CC-ACH-001,"Achievement Orientation"
+"Training Set 038","Core - Competency Skill",CC-AT-002,"Analytical Thinking"
+"Training Set 038","Core - Competency Skill",CC-CL-003,"Change Leadership"
+"Training Set 038","Core - Competency Skill",CC-CSO-004,"Customer Service Orientation"
+"Training Set 038","Core - Competency Skill",CC-INT-005,Initiatieve
+"Training Set 038","Core - Competency Skill",CC-TW-006,"Teamwork and cooperation "
+"Training Set 038","Functional - Competency Skill",FC-COQ-002,"Concern for Ordeer and Quality"
+"Training Set 038","Functional - Competency Skill",FC-CT-001,"Conceptual Thinking"
+"Training Set 038","Functional - Competency Skill",FC-FLX-003,Flexibility
+"Training Set 038","Leadership Skill ( Managerial Competency )",MC-DEV-002-1,"People development and developing employees capability"
+"Training Set 038","Leadership Skill ( Managerial Competency )",MC-DEV-002-2," Coaching Skill"
+"Training Set 038","Leadership Skill ( Managerial Competency )",MC-TL-001-1,"Positive psychology for leadership"
+"Training Set 038","Leadership Skill ( Managerial Competency )",MC-TL-001-2,"Problem solving & decision making"
+"Training Set 038","Leadership Skill ( Managerial Competency )",MC-TL-001-3,"Emotional intelligence for leadership"
+"Training Set 038","SHE & Q Skill",SHE-001,"การอบรมดับเพลิงขั้นต้น ( Basic Fire Fighting ) "
+"Training Set 038","SHE & Q Skill",SHE-002,ความรู้เรื่องความปลอดภัยในการทำงานสำหรับพนักงานใหม่
+"Training Set 038","SHE & Q Skill",SHE-004,"เจ้าหน้าที่ความปลอดภัยในการทำงานระดับหัวหน้างาน (Safety Officer for Supervisor level)"
+"Training Set 038","SHE & Q Skill",SHE-005,"เจ้าหน้าที่ความปลอดภัยในการทำงานระดับบริหาร (Safety Officer for Management level)"
+"Training Set 038","Technical Skill ( Job Family )",TC-002,"Statistic Analysis and Cause Analysis"
+"Training Set 038","Technical Skill ( Job Family )",TC-003,"Chemical Knowledge & Equipment (P&ID)"
+"Training Set 038","Technical Skill ( Job Family )",TC-005,"Production Process & Productivity Improvement"
+"Training Set 038","Technical Skill ( Job Family )",TC-020,"Project Management"
+"Training Set 038","Technical Skill ( Job Family )",TC-021,"การจัดการความปลอดภัยในกระบวนการผลิต 
+(Process Safety Management) "
+"Training Set 038","Technical Skill ( Job Family )",TC-023,"Maintenance Skill"

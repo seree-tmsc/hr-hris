@@ -141,7 +141,8 @@
             </div>
             <div class="col-md-3" align="left">
                 <label>เลขบัตรประจำตัวประชาชน</label>
-                <input type="text" readonly class="form-control" value="<?php echo $emp_id_no; ?>" >
+                <!--<input type="text" readonly class="form-control" value="<?php //echo $emp_id_no; ?>" >-->
+                <input type="text" value='x - xxxx - xxxxx - xx - x' readonly class="form-control">
             </div>
             <div class="col-md-2" align="left">
                 <label>วันเกิด</label>
@@ -152,6 +153,7 @@
                 <input type="text" readonly class="form-control" value="<?php echo $emp_mobile_no; ?>" >
             </div>            
         </div>
+
         <div class="form-group">
             <div class="col-lg-2">
                 <label>&nbsp;</label>
@@ -176,9 +178,8 @@
         
         <!-- Header2 -->
         <div class="form-group">
-            <div class="col-lg-12">
-                <br>
-                <br>
+            <div class="col-lg-12">                
+                <br><br><hr>
                 <label><font color="red">ข้อมูลหน่วยงาน :</font></label>
             </div>
         </div>
@@ -223,7 +224,7 @@
         <!-- Header3 -->
         <div class="form-group">
             <div class="col-lg-12">
-                <br><br>
+                <br><br><hr>
                 <label><font color="red">ที่อยู่ปัจจุบัน :</font></label>
             </div>
         </div>
@@ -261,8 +262,8 @@
         <!-- Header4 -->
         <div class="form-group">
             <div class="col-lg-12">
-                <br><br>
-                <label><font color="red">ประวัติการศึกษา-1 :</font></label>
+                <br><br><hr>
+                <label><font color="red">ประวัติการศึกษา :</font></label>
             </div>
         </div>
 
@@ -309,6 +310,7 @@
         -->
 
         <!-- Header5 -->
+        <!--
         <div class="form-group">
             <div class="col-lg-12">
                 <br><br>
@@ -348,6 +350,7 @@
                 <label>เกรด</label>
                 <input type="text" readonly class="form-control" value="<?php echo $edu_grade2;?>">
             </div>
-        </div>        
+        </div>
+        -->
     </div>
 </div>

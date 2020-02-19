@@ -32,14 +32,14 @@
             {
                 echo "<script>
                         alert('Update data complete!');
-                        window.location.href='admin_p21.php';
+                        window.location.href='admin_p21_criteria.php';
                     </script>";
             }
             else
             {
                 echo "<script> 
                         alert('Warning! Cannot update data!'); 
-                        window.location.href='admin_p21.php'; 
+                        window.location.href='admin_p21_criteria.php'; 
                     </script>";
             }
             
@@ -48,7 +48,7 @@
         {
             echo "<script> 
                     alert('Error!" . substr($e->getMessage(),70,105) . " '); 
-                    window.location.href='admin_p21.php'; 
+                    window.location.href='admin_p21_criteria.php'; 
                 </script>";
         }
     }    

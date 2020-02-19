@@ -58,23 +58,23 @@
         {            
             $tmpmyteam = substr($tmpAllmyteam,0,strpos($tmpAllmyteam,';'));
             $business_condition = "job_business = '" . substr($tmpmyteam, 1, strpos($tmpmyteam,',')-1) . "' ";
-            //echo $business_condition . "<br>";
+            echo $business_condition . "<br>";
 
             if(stripos($tmpmyteam, ',') == strrpos($tmpmyteam, ',', 1))
             {
                 $department_condition = "job_department = '" . substr($tmpmyteam, strpos($tmpmyteam,',')+1, strpos($tmpmyteam,']') - strpos($tmpmyteam,',')-1) . "' ";
-                //echo $department_condition . "<br>";
+                echo $department_condition . "<br>";
                 $condition .= "OR (" . $business_condition . " AND " . $department_condition . ") ";
             }
             else
             {                
                 $department_condition = "job_department = '" . substr($tmpmyteam, stripos($tmpmyteam,',')+1, strrpos($tmpmyteam,',')-(stripos($tmpmyteam,',')+1)) . "' ";
-                //echo $department_condition . "<br>";
+                echo $department_condition . "<br>";
                 $section_condition = "job_section = '" . substr($tmpmyteam, strrpos($tmpmyteam, ',')+1, strpos($tmpmyteam,']') - strrpos($tmpmyteam,',')-1) . "' ";
-                //echo $section_condition . "<br>";
+                echo $section_condition . "<br>";
                 $condition .= "OR (" . $business_condition . " AND " . $department_condition . " AND " . $section_condition . ") ";
             }            
-            //echo "condition = " . $condition . "<br>";
+            echo "condition = " . $condition . "<br>";
 
             $tmpAllmyteam = substr($tmpAllmyteam,strpos($tmpAllmyteam,';')+1,strlen($tmpAllmyteam));
         }        
@@ -146,8 +146,8 @@
                                 array_push($dataArray, $rowArray);
                             }
 
-                            $fileName = "tmpMyTeamEmployeeData.csv";
-                            $fp = fopen('tmpMyTeamEmployeeData.csv', 'w');
+                            $fileName = "tmpMyTeamEmployeeData_Record.csv";
+                            $fp = fopen('tmpMyTeamEmployeeData_Record.csv', 'w');
                             //for support Thai 
                             fputs($fp,(chr(0xEF).chr(0xBB).chr(0xBF)));
 

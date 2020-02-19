@@ -1,4 +1,5 @@
 <h3 align="center"><font color="red">My Team - Performance Data</font></h3>
+<hr>
 
 <div class="row">
     <!--
@@ -8,7 +9,7 @@
     <div class="col-md-12">
         <div class="form-inline">
             Search By Code : 
-            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(1)" placeholder="Employee Code..." title="Input employee code">
+            <input type="text" class="form-control" id="myInput" onkeyup="Func_Search(2)" placeholder="Employee Code..." title="Input employee code">
             <div class="pull-right">                
                 <button class="btn btn-success" data-toggle="modal" data-target="#export_modal">
                     <span class="fa fa-cloud-download"></span> 
@@ -75,6 +76,7 @@
         if(strlen($condition) != 0)
         {
             require_once("myteam_performance_list.php");
+            echo "<h3>Complete!</h3>";
         }
         else
         {

@@ -16,14 +16,14 @@
         {
             echo "<script> 
                     alert('Delete data complete!'); 
-                    window.location.href='admin_p22.php'; 
+                    window.location.href='admin_p22_criteria.php'; 
                 </script>";
         }
         else
         {
             echo "<script> 
                     alert('Warning! Cannot delete data!'); 
-                    window.location.href='admin_p22.php'; 
+                    window.location.href='admin_p22_criteria.php'; 
                 </script>";
         }
         
